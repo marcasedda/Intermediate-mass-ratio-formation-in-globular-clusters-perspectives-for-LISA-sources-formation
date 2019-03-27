@@ -17,6 +17,7 @@
 \newcommand{\Zs}{{\rm Z}_\odot}
 \newcommand{\au}{{\rm AU}}
 \newcommand{\gw}{{\rm GW}}
+\newcommand{\gc}{{\rm GC}}
 \newcommand{\kl}{{\rm KL}}
 \newcommand{\ibh}{{\rm IMBH}}
 \newcommand{\imbh}{{\rm IMBH}}
@@ -289,7 +290,7 @@ While affecting the eccentricity, the IMBH mass does not have a significant effe
 \end{figure}
 
 In order to uncover what is the role played by the IMBH in determining IMRIs formation, we calculate the 
-percentage of IMRIs formed in different mass bins. This quantity, namely $f_{\rm mer}$, represents {\it de facto} IMRIs formation probability. We find that $f_{¦rm mer}$ follows quite a precise trend, regardless of the set, thus in what follows we focus on SET0 only, for clarity's sake. Figure \ref{fig:f5} shows the $f_{\rm mer}-M_\ibh$ relation. We differentiate between IMRIs forming in disrupted triples, in a hierarchical or unstable configuration. 
+percentage of IMRIs formed in different mass bins. This quantity, namely $f_{\rm mer}$, represents {\it de facto} IMRIs formation probability. We find that $f_{\rm mer}$ follows quite a precise trend, regardless of the set, thus in what follows we focus on SET0 only, for clarity's sake. Figure \ref{fig:f5} shows the $f_{\rm mer}-M_\ibh$ relation. We differentiate between IMRIs forming in disrupted triples, in a hierarchical or unstable configuration. 
 Our results suggest that an IMBH-BH-BH has a $10\%$ of probability to arrange in a hierarchical configuration, regardless of the IMBH mass or the GW timescale. IMRIs formation probability, instead, increases weakly with IMBH mass, increasing from $\sim 2\%$ for $M_\ibh \simeq 10^2$ to up to $15\%$ for heavy IMBH, $M_\ibh>10^5\Ms$.
 
 At IMBH mass values below $10^4\Ms$, we find that Hierarchical and Unstable systems contribute equally to the whole IMRI population, while at larger IMBH masses the majority of IMRIs is comprised of Unstable triples. IMRIs forming out of Disrupted triples give little contribution to the population, being their formation probability only $0.5-1\%$.
@@ -297,8 +298,9 @@ At IMBH mass values below $10^4\Ms$, we find that Hierarchical and Unstable syst
 In the IMBH mass range $M_\ibh>10^3\Ms$, the IMRIs formation probability is well described by a simple powerlaw
 \begin{equation}
 f_{\rm mer} = \alpha \left(\frac{M_\ibh}{10^2\Ms}\right)^\beta,
+\label{fmerg}
 \end{equation}  
-with $\alpha = 0.7\pm0.2$ and $\beta = 0.45\pm0.03$. 
+with $\alpha = (7\pm2)\times 10^{-3}$ and $\beta = 0.45\pm0.03$. 
 
 \begin{figure}
     \centering
@@ -309,6 +311,40 @@ with $\alpha = 0.7\pm0.2$ and $\beta = 0.45\pm0.03$.
 
 Our simulations suggest that whenever a three-body encounter occurs in a GC containing a $10^4\Ms$ IMBH, there is a $\sim 10\%$ of the probability for IMRIs formation and the eccentricity at formation is of the order of 0.95. 
 
+\subsection{IMRIs merger rate}
+
+{\bf Previous studies based on full consistent N-body simulations of star clusters containing IMBHs with various masses and general properties  \citep{konstantinidis13,haster16,leigh14, macleod16} have shown that binary formation involving an IMBH takes place at a rate of $R_{\rm bin} \sim 10^{-7}$ yr. Assuming typical ages for globular-like star clusters of $t_{\rm age}\sim 10^{10}$ yr and assuming that IMBH buildup occurs in the clusters early lifetime ($\lesssim 1$ Gyr), we can use the merger probability fitting function depicted in Equation \ref{fmerg} to infer IMRIs merger rate per typical cluster
+\begin{equation}
+    \Gamma(M_\ibh) = R_{\rm bin}t_{\rm age}f_{\rm mer} \sim 0.7\left(\frac{M_{\ibh}}{10^2\Ms}\right)^{0.45},
+\end{equation}
+ranging from $\Gamma_{\rm IMRI} = 7-50$ yr$^{-1}$ for $M_\ibh = 10^2-10^4\Ms$, respectively.
+
+To put such a quantity in the context of MW-like galaxies, we need to make assumptions on the IMBH putative mass function. As recently suggested by Arca Sedda et al (in prep.), out of the 151 Galactic GCs currently known, around 35 might be harbouring, at present time, an IMBH with mass in the range $10^3-10^4\Ms$. They find that the mass distribution of these putative IMBHs can be described by a Maxwellian in the form 
+\begin{equation}
+    f(x_\ibh) = \frac{a}{\sigma\sqrt(2\pi)}\exp{\left(-\frac{\left(x_\ibh - \mu\right)^2}{ (2\sigma^2)}\right)},
+\end{equation}
+with $x_\ibh\equiv \Log M_\ibh$, and $a=0.14\pm0.3$ , $\mu = 4.01\pm0.09$ and $\sigma = 0.4\pm0.1 $.
+
+Combining equations above, we can define a IMRI merger rate for MW-like galaxies as
+\begin{equation}
+    \Gamma_{\rm MW} = f_\ibh N_\gc \int \Gamma(M_\ibh) f(x_\ibh) {\rm d}M_\ibh,
+\end{equation}
+where $f_\ibh N_\gc$ is the number of GCs containing an IMBH. This equation has analytical solution
+which has analytical solution
+\begin{align}
+ \frac{\Gamma_{\rm MW} (x_\ibh)}{f_\ibh N_\gc} =&   \frac{a}{2} (A + B\mu) {\rm erf}\left(\frac{x_\ibh-\mu}{\sigma\sqrt{2\pi}} \right) + \nonumber\\
+                                & - \frac{a}{\sqrt(2\pi)}B \sigma \exp{\left(\frac{-\left(x_\ibh-\mu\right)^2}{2\sigma^2}\right)},
+\end{align}
+ the coefficients $A = \alpha -\beta \Log(100)$ and $B \equiv \beta$ are conveniently manipulated from Equation \ref{fmerg}.
+
+Assuming a typical IMBH population spanning the mass range $10^2-10^4\Ms$, a number of GCs $N_\gc = 151$, a fraction $f_\ibh \simeq 35/151$ of GCs hosting an IMBH we can infer the MW-IMRI rate 
+\begin{equation}
+\Gamma_{\rm MW,IMRI} \simeq 4\times 10^{-3} {\rm MW}^{-1} {\rm yr}^{-1}
+\end{equation}
+
+
+
+}
 
 \subsection{Serendipitous formation of stellar BH binaries around an IMBH}
 
