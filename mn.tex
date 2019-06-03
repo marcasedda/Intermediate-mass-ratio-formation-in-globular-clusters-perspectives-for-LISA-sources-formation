@@ -191,7 +191,8 @@ presented for the first time in][]{KupiEtAl06}, as well as the cluster
 gravitational potential \textbf{(REF: Manuel, your first fork of ARCHAIN cited
 here)}. We scan the parameter space, in particular the IMBH and stellar-mass
 black hole masses, their orbital configuration, and the host cluster structural
-properties with a set of 2,000 models.
+properties with a set of 2,000 models. \textbf{(Manuel, is the number right or did
+you run more?)}
 
 In Section \ref{num} we present and summarise the numerical setup used to model
 the interactions; in Section \ref{met} we discuss the main properties of the
@@ -200,36 +201,42 @@ simulations outputs, and the implications for GW astronomy; while Section
 
 \section{Initial conditions} \label{met}
 
-In this work, we study IMRIs formation via triple interactions involving an
-IMBH and two stellar mass BHs that inhabit in the centre of a massive star
-cluster.  One of the two BHs is bound to the IMBH, while the second BH orbits
-around the IMBH-BH binary centre of mass. The triple orbital configuration can
-be dissected into an inner and an outer binary, as sketched in Figure
-\ref{fig:f1}. This simple picture is complicated by the fact that the triple
-cannot be considered as an isolated system, as other cluster members can affect
-its evolution.
+Based on the numerical studies of
+\cite{konstantinidis13,leigh14,MacLeodEtAl2016,haster16}, we consider a
+stellar-mass black hole which has formed a binary with the IMBH and a second
+stellar-mass black hole, orbiting around the binary centre-of-mass. We depict
+this configuration in Figure~(\ref{fig:f1}) as an inner and outer binary, and
+note that this triple configuration is not isolated, but embedded in a cluster.
 
 \begin{figure}
     \centering
     \includegraphics[width=7cm]{triple}
-    \caption{Sketch of the IMBH-BH-BH triple configuration.}
+    \caption{The inner binary is formed by the stellar-mass black hole of mass  $M_\ibh$ and $M_\bhu$, 
+the binary semi-major axis $a_\inn$ and its eccentricity $e_\inn$. The outer binary depends on the mass of the
+second stellar-mass black hole, $M_\bhd$, it has a semi-major axis  $a_\out$ and an eccentricity $e_\out$.
+These three compact objects are embedded in a host cluster which is modelled following a Dehnen profile \citep{Deh93},
+characterised by a total mass $M_c$, a scale radius, $r_c$, and the inner slope of the density profile $\gamma$. The angular
+momentum of the inner binary $L_{\rm in}$ and the outer one $L_{\rm out}$ subtend and angle $i$.}
     \label{fig:f1}
 \end{figure}
 
-Therefore, the phase space that characterises the triple's main properties can be dissected into three groups:
-\begin{itemize}
-    \item {\bf Inner binary (IMBH+BH)}: depends on the IMBH and BH masses, $M_\ibh$ and $M_\bhu$, the binary semi-major axis $a_\inn$ and its eccentricity $e_\inn$.
-    \item {\bf Outer binary (IMBH+BH+BH)}: depends on the third BH mass, $M_\bhd$, semi-major axis $a_\out$, eccentricity $e_\out$.
-    \item {\bf Host cluster}: we model the host cluster as a \cite{Deh93} sphere, characterized by total mass, $M_c$, scale radius, $r_c$, and the inner slope of the density profile $\gamma$.
-\end{itemize}
+We choose the IMBH mass to range among eight different values ${\rm
+Log}(M_\ibh/\Ms) = 2-2.5,\,3-3.5,\,4-4.5,\,5-5.5$, so as to cover typical values of
+IMBH forming in stellar systems of various sizes, from young and open clusters,
+to globular clusters, and up to low-mass nuclear clusters and dwarf galaxies.
+Stellar-mass black hole (BH) masses are selected between $M_{\rm min} = 10\,\Ms$ and
+$M_{\rm max} = 30\,\Ms$, a mass range typical of stellar environments with a
+metallicity $Z<0.25\,\Zs$ \citep{belczynski16,spera16}. 
 
-In order to unveil the link between IMRIs formation and IMBH properties, we select the IMBH mass among eight different values ${\rm Log}(M_\ibh/\Ms) = 2-2.5-3-3.5-4-4.5-5-5.5$. This range covers typical values of putative IMBH masses forming in stellar systems of various sizes, from young and open clusters, to globular clusters, and up to low-mass nuclear clusters and dwarf galaxies.
+From Figure 5 of \cite{belczynski16}, the BH mass can be connected to the
+initial stellar mass via a simple power-law \textbf{(Manuel, didn't you derive
+a similar result? why not credit yourself?)}
 
-Stellar BH masses are selected between $M_{\rm min} = 10\Ms$ and $M_{\rm max} = 30\Ms$, a mass range typical of stellar environments with a metallicity $Z<0.25\Zs$ \citep{belczynski16,spera16}. 
-From Figure 5 of \cite{belczynski16}, we find that the BH mass can be connected to the initial star mass via a simple power-law 
 \begin{equation}
 \left(\frac{m_\bh}{\Ms}\right) = A(Z) \left(\frac{m_*}{\Ms}\right)^{C(Z)} + B(Z),
 \end{equation}
+
+\noindent
 with the coefficient depending on the metallicity as summarized in Table \ref{tab:t1}.
 
 Assuming that BH progenitor stars follow initially a standard \cite{kroupa01} initial mass function, $f(m_*) \propto m_*^-s$, we can infer BHs final mass distribution simply as $f(m_\bh)\propto m_\bh^{-s/C(Z)}$. This simple approximation leads to a slope $s/C(Z) = 1.71-1.92$. 
