@@ -130,63 +130,73 @@ a keyword -- another.
 
 \section{Introduction}
 
-Intermediate mass black holes, with masses in the range $10^2-10^5\Ms$, might
-represent the missing link between stellar and supermassive mass black holes.
-Dense stellar systems, such as globular clusters (GCs), are thought to be ideal
-factories for IMBH production via formation and collapse of a very massive
-stars through stellar collisions \citep{zwart02, giersz15, mapelli16} or via
+Intermediate-mass black holes, with masses in the range $10^2-10^5\Ms$
+represent the missing link between stellar-mass and supermassive black holes.
+Dense stellar systems, such as globular clusters (GCs), could be the place
+where IMBH form via the creation of a very massive stars through a runaway
+process which would eventually collapse
+\citep{PortegiesZwartMcMillan00,GurkanEtAl04,PortegiesZwartEtAl04,
+FreitagEtAl06, giersz15, mapelli16}.  This process however depends on a number
+of assumptions, such as the metallicity, stellar winds, and the actualy outcome
+of the stellar collisions
+\citep[see][]{BelkusEtAl07,SuzukiEtAl07,GlebbeekEtAl09}.
+Another possibility is through
 multiple interactions and mergers between stars and stellar-mass BHs
 \citep{giersz15}. Unfortunately, a striking observational evidence for the
-presence of IMBHs inhabiting GCs is still missing due to the the little
+presence of IMBHs inhabiting GCs is still missing due to the little
 dynamical effects that these objects have on their surroundings. Indeed, models
-suggest that several processes can mimic an IMBH, like anisotropies in the GC
-kinematical properties \citep{zocchi}, or the presence of a dense cluster of
-stellar mass BHs that dominate the inner cluster centre
+suggest that several processes can mimic the presence of an IMBH, like anisotropies in the
+kinematical properties of the GC \citep{zocchi}, or the presence of a dense cluster of
+stellar-mass black holes that dominate the inner cluster centre
 \citep{AAG18a,AAG18b,AS16,vandermarel10}. Nevertheless, a few observational
 IMBHs candidates have been found for Galactic GCs
 \citep{noyola10,lu13,lanzoni13,kiziltan17} and their mass and influence radius
 might be possibly connected with the host cluster observational properties
-\citep{AAG18a}. Due to this, finding an unique way to unravel the presence of
-IMBHs in GCs represents one of the most interesting challenges in modern
-astronomy. Beside this, the presence of an IMBH sitting in the centre of a
-dense cluster represents a scenario particularly appealing from the
-perspectives of gravitational waves (GW) astronomy. Indeed, a compact remnants
-orbiting the IMBH can enter a regime where GWs emission dominates, leading to
-the formation of an intermediate mass-ratio inspiral
-\citep[IMRI,][]{konstantinidis13,haster16,leigh14}, a class of sources possible
-audible with the next generation of GW observatories like LISA
-\citep{seoane07,amaro12,seoane18}
+\citep{AAG18a}. 
 
-However, in the highly dense regions that characterize star clusters centres,
-the formation of IMRIs is not a smooth process. Indeed, due to the continuous
-interactions with stars, an IMRI ``progenitor'', namely a tight IMBH-BH binary,
-might be subjected to strong perturbation induced, for instance by a passing-by
-BH. The three-body interaction involving the IMBH and the two BHs can lead to a
-variety of end states, including the formation of an IMRI, a stellar BH binary,
-the ejection of one BH, or even both, or the development of a head-on
-collision. 
+It has been shown in the literature that a compact object, such as a
+stellar-mass black hole, could be gravitationally captured by the IMBH, to
+eventually merge with it. The first numerical simulation of this scenario was
+presented by \cite{konstantinidis13}, who used dedicated direct-summation
+$N-$body simulations with all relativistic phenomena included at least at the
+lowest order (periapsis shift, energy loss due to gravitational radiation, and
+the relativistic recoil). They observed an intermediate-mass ratio inspiral
+\citep{Amaro-SeoaneLRR2012,Amaro-SeoaneEtAl07} forming and follow it down to
+the merger, which leads to the ejection of the IMBH. Other studies have
+followed their findings, in particular the work of
+\cite{leigh14,MacLeodEtAl2016}; also, because the initial setup of
+\cite{haster16} is almost identical to that of \cite{konstantinidis13} but they
+use a different integrator, it can be envisaged as a confirmation of their
+results. This source of gravitational waves (GWs) can be observed with a the
+Laser Interferometer Space Antenna (LISA, see the LISA Consortium study
+\citealt{Amaro-SeoaneEtAl2017} and also
+\citealt{Amaro-SeoaneEtAl2013,Amaro-SeoaneEtAl2012}), or other space-borne
+observatories alternatives, currently under study, Taiji \citep{taiji17} or
+Tianqin \citep{tianqin16}. Moreover, IMRIs could be jointly detected with LISA and
+ground-based detectors such as LIGO/Virgo, and LISA could warn them years in
+advance and with seconds of precision \citep{Amaro-Seoane2018}.
 
-Quantifying the branching ratio for IMRIs formation constitute a fundamental
-step to assess the probability to observe these GW sources with the next
-generation of space-based detectors like
-LISA\footnote{\url{https://www.elisascience.org/}} \citep{seoane07}, TianQin
-\citep{tianqin16} or Taiji \citep{taiji17}.
+Due to the fact that the IMBH is lighter than a supermassive black hole in a
+galactic nucleus, we cannot assume anymore that it is fixed at the centre of
+the system. This makes an analytical study of the problem arduous and
+challenging.  In this article we model the potential formation of an IMRI in a
+dense stellar system, a cluster, via the interactions between an IMBH and
+stellar-mass black holes. The outcome of such process is varied and could lead
+to different end states, including the formation of an IMRI, a stellar-mass
+black hole binary, the ejection of one or both stellar-mass black holes, or
+even a head-on collision between the compact objects.  To this end, we use a
+direct-summation $N-$body code that includes post-Newtonian to account for the
+periapsis shift and the loss of energy via gravitational radiation \citep[as
+presented for the first time in][]{KupiEtAl06}, as well as the cluster
+gravitational potential \textbf{(REF: Manuel, your first fork of ARCHAIN cited
+here)}. We scan the parameter space, in particular the IMBH and stellar-mass
+black hole masses, their orbital configuration, and the host cluster structural
+properties with a set of 2,000 models.
 
-In this paper, we model the potential formation of an IMRI from the
-interactions between an IMBH and two stellar mass BHs. To reach the aim, we use
-$N$-body simulations that take into account in particles' equations of motion
-both the star cluster gravitational potential and post-Newtonian corrections up
-to 2.5 order. Varying the IMBH and BHs masses, their orbital configuration, and
-the host cluster structural properties, we build-up three sets consisting of
-2000 models each, which allow us to uncover three possible scenarios for IMRIs
-formation. 
-
-The paper is organized as follows: in Section \ref{num} we present and
-summarize the numerical setup used to model the IMBH - BH interaction, in
-Section \ref{met} we discuss the main properties of the simulations outputs,
-and the implications for GW astronomy, while Section \ref{res} is devoted to
-the results summary and conclusions. 
-
+In Section \ref{num} we present and summarise the numerical setup used to model
+the interactions; in Section \ref{met} we discuss the main properties of the
+simulations outputs, and the implications for GW astronomy; while Section
+\ref{res} is devoted to the results and conclusions. 
 
 \section{Initial conditions} \label{met}
 
