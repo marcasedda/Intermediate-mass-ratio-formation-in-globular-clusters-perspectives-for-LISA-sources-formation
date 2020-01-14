@@ -1,0 +1,152 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: article.aux
+Case mismatch error between cite keys Giersz15 and giersz15
+---line 75 of file article.aux
+ : \citation{Giersz15
+ :                   }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Giersz15 and giersz15
+---line 80 of file article.aux
+ : \citation{Giersz15
+ :                   ,AAG19}
+I'm skipping whatever remains of this command
+The style file: aasjournal.bst
+Database file #1: aamnem99.bib
+Database file #2: biblio.bib
+You're missing a field name---line 1100 of file biblio.bib
+ : 
+ : #   author = {{Amaro-Seoane}, P.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 7467 of file biblio.bib
+ : 
+ : %   author = {{Hild}, S. and {Abernathy}, M. and {Acernese}, F. and {Amaro-Seoane}, P. and
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field part---line 8647 of file biblio.bib
+ :   month =     
+ :               ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 12960 of file biblio.bib
+ : 
+ : %  author =     {{Quinlan}, G. D. and {Shapiro}, S. L.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 13710 of file biblio.bib
+ : 
+ : %   author = {{Sathyaprakash}, B. and {Abernathy}, M. and {Acernese}, F. and
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Unbalanced braces---line 18477 of file biblio.bib
+ :     title = "{M$_{\bullet}$} - {$\sigma$}relation for intermediate-mass black holes in globular clusters
+ :                                                                                                         }",
+I'm skipping whatever remains of this entry
+Database file #3: ASetal2015.bib
+Warning--string name "phys." is undefined
+--line 9 of file ASetal2015.bib
+I was expecting a `,' or a `}'---line 9 of file ASetal2015.bib
+ :   journal = phys. 
+ :                   Rev. D,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 74 of file ASetal2015.bib
+ :   journal = Phys. 
+ :                   Rev. D,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1199 of file ASetal2015.bib
+ : @article{punturo10
+ :                   ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1566 of file ASetal2015.bib
+ :   journal = Phys. 
+ :                   Rev. D,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2063 of file ASetal2015.bib
+ : @article{kozai62
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2141 of file ASetal2015.bib
+ : @article{haster16
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2325 of file ASetal2015.bib
+ : @article{vandermarel10
+ :                       ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2786 of file ASetal2015.bib
+ :   journal = Phys. 
+ :                   Rev. D,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2898 of file ASetal2015.bib
+ : @article{seoane18
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3216 of file ASetal2015.bib
+ : @article{kroupa01
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4908 of file ASetal2015.bib
+ : @article{giersz15
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4924 of file ASetal2015.bib
+ : @article{peters64
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4938 of file ASetal2015.bib
+ : @article{mikkola99
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6025 of file ASetal2015.bib
+ : @article{Deh93
+ :               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6595 of file ASetal2015.bib
+ : @article{Deh93
+ :               ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty year in seoane18; set to ????
+Warning--empty journal in seoane18
+You've used 46 entries,
+            3183 wiz_defined-function locations,
+            1819 strings with 23524 characters,
+and the built_in function-call counts, 20900 in all, are:
+= -- 1779
+> -- 1388
+< -- 22
++ -- 464
+- -- 493
+* -- 1710
+:= -- 3954
+add.period$ -- 46
+call.type$ -- 46
+change.case$ -- 300
+chr.to.int$ -- 46
+cite$ -- 48
+duplicate$ -- 850
+empty$ -- 1296
+format.name$ -- 553
+if$ -- 4164
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 46
+newline$ -- 143
+num.names$ -- 184
+pop$ -- 311
+preamble$ -- 2
+purify$ -- 300
+quote$ -- 0
+skip$ -- 728
+stack$ -- 0
+substring$ -- 972
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 414
+warning$ -- 2
+while$ -- 176
+width$ -- 0
+write$ -- 462
+(There were 23 error messages)

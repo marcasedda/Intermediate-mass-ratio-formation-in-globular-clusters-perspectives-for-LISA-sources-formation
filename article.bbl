@@ -1,0 +1,185 @@
+ \newcommand{\noop}[1]{}
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Amaro-Seoane}(????)}]{seoane18}
+{Amaro-Seoane}, P. ????
+
+\bibitem[{{Amaro-Seoane}(2018)}]{amaro12}
+---. 2018, Living Reviews in Relativity, 21, 4
+
+\bibitem[{{Amaro-Seoane} {et~al.}(2007){Amaro-Seoane}, {Gair}, {Freitag},
+  {Miller}, {Mandel}, {Cutler}, \& {Babak}}]{seoane07}
+{Amaro-Seoane}, P., {Gair}, J.~R., {Freitag}, M., {et~al.} 2007, Classical and
+  Quantum Gravity, 24, R113
+
+\bibitem[{{Antonini} \& {Perets}(2012)}]{antonini12}
+{Antonini}, F., \& {Perets}, H.~B. 2012, apj, 757, 27
+
+\bibitem[{{Arca-Sedda}(2016)}]{AS16}
+{Arca-Sedda}, M. 2016, mn, 455, 35
+
+\bibitem[{{Arca Sedda} {et~al.}(2018){Arca Sedda}, {Askar}, \&
+  {Giersz}}]{AAG18a}
+{Arca Sedda}, M., {Askar}, A., \& {Giersz}, M. 2018, \mnras, 479, 4652
+
+\bibitem[{{Arca-Sedda} \& {Capuzzo-Dolcetta}(2019)}]{ASCD19}
+{Arca-Sedda}, M., \& {Capuzzo-Dolcetta}, R. 2019, mn, 483, 152
+
+\bibitem[{{Askar} {et~al.}(2018){Askar}, {Arca Sedda}, \& {Giersz}}]{AAG18b}
+{Askar}, A., {Arca Sedda}, M., \& {Giersz}, M. 2018, \mnras, 478, 1844
+
+\bibitem[{{Belczynski} {et~al.}(2016){Belczynski}, {Holz}, {Bulik}, \&
+  {O'Shaughnessy}}]{belczynski16}
+{Belczynski}, K., {Holz}, D.~E., {Bulik}, T., \& {O'Shaughnessy}, R. 2016, nat,
+  534, 512
+
+\bibitem[{{Conselice} {et~al.}(2016){Conselice}, {Wilkinson}, {Duncan}, \&
+  {Mortlock}}]{conselice16}
+{Conselice}, C.~J., {Wilkinson}, A., {Duncan}, K., \& {Mortlock}, A. 2016, apj,
+  830, 83
+
+\bibitem[{{Dehnen}(1993)}]{Deh93}
+{Dehnen}, W. 1993, mn, 265, 250
+
+\bibitem[{{Giersz} {et~al.}(2015){Giersz}, {Leigh}, {Hypki}, {L{\"u}tzgendorf},
+  \& {Askar}}]{giersz15}
+{Giersz}, M., {Leigh}, N., {Hypki}, A., {L{\"u}tzgendorf}, N., \& {Askar}, A.
+  2015, ArXiv e-prints, arXiv:1506.05234
+
+\bibitem[{{G{\"u}ltekin} {et~al.}(2009){G{\"u}ltekin}, {Richstone}, {Gebhardt},
+  {Lauer}, {Tremaine}, {Aller}, {Bender}, {Dressler}, {Faber}, {Filippenko},
+  {Green}, {Ho}, {Kormendy}, {Magorrian}, {Pinkney}, \& {Siopis}}]{gultekin09}
+{G{\"u}ltekin}, K., {Richstone}, D.~O., {Gebhardt}, K., {et~al.} 2009, apj,
+  698, 198
+
+\bibitem[{{Haster} {et~al.}(2016){Haster}, {Antonini}, {Kalogera}, \&
+  {Mandel}}]{haster16}
+{Haster}, C.-J., {Antonini}, F., {Kalogera}, V., \& {Mandel}, I. 2016, apj,
+  832, 192
+
+\bibitem[{{Huang} {et~al.}(2017){Huang}, {Gong}, {Xu}, {Amaro-Seoane}, {Bian},
+  {Chen}, {Chen}, {Fang}, {Feng}, {Liu}, {Li}, {Li}, {Luo}, {Shao}, {Spurzem},
+  {Tang}, {Wang}, {Wang}, {Zang}, \& {Lau}}]{taiji17}
+{Huang}, S., {Gong}, X., {Xu}, P., {et~al.} 2017, Scientia Sinica Physica,
+  Mechanica \& Astronomica, 47, 010404
+
+\bibitem[{{Jeans}(1919)}]{jeans19}
+{Jeans}, J.~H. 1919, mn, 79, 408
+
+\bibitem[{{King}(1962)}]{king62}
+{King}, I. 1962, astj, 67, 471
+
+\bibitem[{{K{\i}z{\i}ltan} {et~al.}(2017){K{\i}z{\i}ltan}, {Baumgardt}, \&
+  {Loeb}}]{kiziltan17}
+{K{\i}z{\i}ltan}, B., {Baumgardt}, H., \& {Loeb}, A. 2017, nat, 542, 203
+
+\bibitem[{{Kocsis} {et~al.}(2012){Kocsis}, {Ray}, \& {Portegies
+  Zwart}}]{kocsis12}
+{Kocsis}, B., {Ray}, A., \& {Portegies Zwart}, S. 2012, apj, 752, 67
+
+\bibitem[{{Konstantinidis} {et~al.}(2013){Konstantinidis}, {Amaro-Seoane}, \&
+  {Kokkotas}}]{konstantinidis13}
+{Konstantinidis}, S., {Amaro-Seoane}, P., \& {Kokkotas}, K.~D. 2013, aa, 557,
+  A135
+
+\bibitem[{{Kozai}(1962)}]{kozai62}
+{Kozai}, Y. 1962, AJ, 67, 591
+
+\bibitem[{{Kroupa}(2001)}]{kroupa01}
+{Kroupa}, P. 2001, MNRAS, 322, 231
+
+\bibitem[{{Lanzoni} {et~al.}(2013){Lanzoni}, {Mucciarelli}, {Origlia},
+  {Bellazzini}, {Ferraro}, {Valenti}, {Miocchi}, {Dalessandro}, {Pallanca}, \&
+  {Massari}}]{lanzoni13}
+{Lanzoni}, B., {Mucciarelli}, A., {Origlia}, L., {et~al.} 2013, apj, 769, 107
+
+\bibitem[{{Leigh} {et~al.}(2014){Leigh}, {L{\"u}tzgendorf}, {Geller},
+  {Maccarone}, {Heinke}, \& {Sesana}}]{leigh14}
+{Leigh}, N.~W.~C., {L{\"u}tzgendorf}, N., {Geller}, A.~M., {et~al.} 2014, mn,
+  444, 29
+
+\bibitem[{{Lidov}(1962)}]{lidov62}
+{Lidov}, M.~L. 1962, Planetary and Space Science, 9, 719
+
+\bibitem[{{Lithwick} \& {Naoz}(2011)}]{Lithwick11}
+{Lithwick}, Y., \& {Naoz}, S. 2011, apj, 742, 94
+
+\bibitem[{{Lu} {et~al.}(2013){Lu}, {Do}, {Ghez}, {Morris}, {Yelda}, \&
+  {Matthews}}]{lu13}
+{Lu}, J.~R., {Do}, T., {Ghez}, A.~M., {et~al.} 2013, apj, 764, 155
+
+\bibitem[{{Luo} {et~al.}(2016){Luo}, {Chen}, {Duan}, {Gong}, {Hu}, {Ji}, {Liu},
+  {Mei}, {Milyukov}, {Sazhin}, {Shao}, {Toth}, {Tu}, {Wang}, {Wang}, {Yeh},
+  {Zhan}, {Zhang}, {Zharov}, \& {Zhou}}]{tianqin16}
+{Luo}, J., {Chen}, L.-S., {Duan}, H.-Z., {et~al.} 2016, Classical and Quantum
+  Gravity, 33, 035010
+
+\bibitem[{{L{\"u}tzgendorf} {et~al.}(2013){L{\"u}tzgendorf}, {Kissler-Patig},
+  {Gebhardt}, {Baumgardt}, {Noyola}, {de Zeeuw}, {Neumayer}, {Jalali}, \&
+  {Feldmeier}}]{Lutzgendorf13}
+{L{\"u}tzgendorf}, N., {Kissler-Patig}, M., {Gebhardt}, K., {et~al.} 2013, aa,
+  552, A49
+
+\bibitem[{{MacLeod} {et~al.}(2016){MacLeod}, {Trenti}, \&
+  {Ramirez-Ruiz}}]{macleod16}
+{MacLeod}, M., {Trenti}, M., \& {Ramirez-Ruiz}, E. 2016, apj, 819, 70
+
+\bibitem[{{Mapelli}(2016)}]{mapelli16}
+{Mapelli}, M. 2016, mn, 459, 3432
+
+\bibitem[{{Mardling} \& {Aarseth}(2001)}]{mardling01}
+{Mardling}, R.~A., \& {Aarseth}, S.~J. 2001, mn, 321, 398
+
+\bibitem[{{Mikkola} \& {Merritt}(2008)}]{mikkola08}
+{Mikkola}, S., \& {Merritt}, D. 2008, astj, 135, 2398
+
+\bibitem[{{Mikkola} \& {Tanikawa}(1999)}]{mikkola99}
+{Mikkola}, S., \& {Tanikawa}, K. 1999, mn, 310, 745
+
+\bibitem[{{Naoz}(2016)}]{naoz16}
+{Naoz}, S. 2016, araa, 54, 441
+
+\bibitem[{{Naoz} {et~al.}(2011){Naoz}, {Farr}, {Lithwick}, {Rasio}, \&
+  {Teyssandier}}]{naoz11}
+{Naoz}, S., {Farr}, W.~M., {Lithwick}, Y., {Rasio}, F.~A., \& {Teyssandier}, J.
+  2011, nat, 473, 187
+
+\bibitem[{{Noyola} {et~al.}(2010){Noyola}, {Gebhardt}, {Kissler-Patig},
+  {L{\"u}tzgendorf}, {Jalali}, {de Zeeuw}, \& {Baumgardt}}]{noyola10}
+{Noyola}, E., {Gebhardt}, K., {Kissler-Patig}, M., {et~al.} 2010, apjl, 719,
+  L60
+
+\bibitem[{{Peters}(1964)}]{peters64}
+{Peters}, P.~C. 1964, Physical Review, 136, 1224
+
+\bibitem[{{Portegies Zwart} \& {McMillan}(2002)}]{zwart02}
+{Portegies Zwart}, S.~F., \& {McMillan}, S.~L.~W. 2002, apj, 576, 899
+
+\bibitem[{{Punturo} {et~al.}(2010){Punturo}, {Abernathy}, {Acernese}, {Allen},
+  \& {et al.}}]{punturo10}
+{Punturo}, M., {Abernathy}, M., {Acernese}, F., {Allen}, B., \& {et al.} 2010,
+  Classical and Quantum Gravity, 27, 194002
+
+\bibitem[{{Seto} {et~al.}(2001){Seto}, {Kawamura}, \& {Nakamura}}]{seto01}
+{Seto}, N., {Kawamura}, S., \& {Nakamura}, T. 2001, Physical Review Letters,
+  87, 221103
+
+\bibitem[{{Spera} {et~al.}(2016){Spera}, {Mapelli}, \& {Jeffries}}]{spera16}
+{Spera}, M., {Mapelli}, M., \& {Jeffries}, R.~D. 2016, mn, 460, 317
+
+\bibitem[{{van der Marel} \& {Anderson}(2010)}]{vandermarel10}
+{van der Marel}, R.~P., \& {Anderson}, J. 2010, apj, 710, 1063
+
+\bibitem[{{Webb} \& {Leigh}(2015)}]{webb15}
+{Webb}, J.~J., \& {Leigh}, N.~W.~C. 2015, mn, 453, 3278
+
+\bibitem[{{Wen}(2003)}]{wen03}
+{Wen}, L. 2003, apj, 598, 419
+
+\bibitem[{{Zocchi} {et~al.}(2015){Zocchi}, {Gieles}, \&
+  {H{\'e}nault-Brunet}}]{zocchi}
+{Zocchi}, A., {Gieles}, M., \& {H{\'e}nault-Brunet}, V. 2015, ArXiv e-prints,
+  arXiv:1501.05262
+
+\end{thebibliography}
