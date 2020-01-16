@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.25)  14 JAN 2020 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.25)  16 JAN 2020 10:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -516,11 +516,7 @@ Class revtex4-1 Info: cite was not loaded (OK!) on input line 45.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 45.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 45.
 
-(./article.aux
-
-LaTeX Warning: Label `fig:f5' multiply defined.
-
-)
+(./article.aux)
 \openout1 = `article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -537,7 +533,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count164
 \scratchdimen=\dimen140
@@ -596,119 +593,197 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (9.03374pt too wide) in paragraph at lines 96--96
+Overfull \hbox (9.03374pt too wide) in paragraph at lines 97--97
 [][] 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: Reference `num' on page 2 undefined on input line 149.
+LaTeX Warning: Reference `num' on page 2 undefined on input line 150.
 
-<triple.pdf, id=99, 248.93pt x 218.8175pt>
+<triple.pdf, id=80, 248.93pt x 218.8175pt>
 File: triple.pdf Graphic file (type pdf)
 <use triple.pdf>
-Package pdftex.def Info: triple.pdf  used on input line 169.
+Package pdftex.def Info: triple.pdf  used on input line 170.
 (pdftex.def)             Requested size: 199.16928pt x 175.08093pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 176.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 177.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
  [2 <./triple.pdf>]
 [3]
-Overfull \hbox (41.17885pt too wide) in paragraph at lines 255--265
- []$ 
+Underfull \hbox (badness 10000) in paragraph at lines 256--267
+[]$[]$ 
  []
 
-<Sketch_IMRI.pdf, id=210, 651.43375pt x 546.04pt>
+<Sketch_IMRI.pdf, id=198, 651.43375pt x 546.04pt>
 File: Sketch_IMRI.pdf Graphic file (type pdf)
 <use Sketch_IMRI.pdf>
-Package pdftex.def Info: Sketch_IMRI.pdf  used on input line 286.
+Package pdftex.def Info: Sketch_IMRI.pdf  used on input line 293.
 (pdftex.def)             Requested size: 455.24408pt x 381.6005pt.
 [4] [5 <./Sketch_IMRI.pdf>]
 Package epstopdf Info: Source file: <semiaxis.eps>
-(epstopdf)                    date: 2020-01-10 16:54:18
-(epstopdf)                    size: 86864 bytes
+(epstopdf)                    date: 2020-01-15 11:56:14
+(epstopdf)                    size: 86689 bytes
 (epstopdf)             Output file: <semiaxis-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-11 17:24:34
-(epstopdf)                    size: 8908 bytes
+(epstopdf)                    date: 2020-01-15 11:56:20
+(epstopdf)                    size: 8885 bytes
 (epstopdf)             Command: <repstopdf --outfile=semiaxis-eps-converted-to.
 pdf semiaxis.eps>
-(epstopdf)             \includegraphics on input line 353.
+(epstopdf)             \includegraphics on input line 367.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./semiaxis-eps-converted-to.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<semiaxis-eps-converted-to.pdf, id=279, 361.35pt x 252.945pt>
+<semiaxis-eps-converted-to.pdf, id=273, 361.35pt x 252.945pt>
 File: semiaxis-eps-converted-to.pdf Graphic file (type pdf)
 <use semiaxis-eps-converted-to.pdf>
-Package pdftex.def Info: semiaxis-eps-converted-to.pdf  used on input line 353.
+Package pdftex.def Info: semiaxis-eps-converted-to.pdf  used on input line 367.
 
 (pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
 Package epstopdf Info: Source file: <ecce.eps>
-(epstopdf)                    date: 2020-01-10 16:54:18
-(epstopdf)                    size: 85576 bytes
+(epstopdf)                    date: 2020-01-16 10:04:19
+(epstopdf)                    size: 86747 bytes
 (epstopdf)             Output file: <ecce-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-11 17:24:35
-(epstopdf)                    size: 8909 bytes
+(epstopdf)                    date: 2020-01-16 10:04:54
+(epstopdf)                    size: 10532 bytes
 (epstopdf)             Command: <repstopdf --outfile=ecce-eps-converted-to.pdf 
 ecce.eps>
-(epstopdf)             \includegraphics on input line 354.
+(epstopdf)             \includegraphics on input line 368.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./ecce-eps-converted-to.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<ecce-eps-converted-to.pdf, id=280, 361.35pt x 252.945pt>
+<ecce-eps-converted-to.pdf, id=274, 361.35pt x 252.945pt>
 File: ecce-eps-converted-to.pdf Graphic file (type pdf)
 <use ecce-eps-converted-to.pdf>
-Package pdftex.def Info: ecce-eps-converted-to.pdf  used on input line 354.
+Package pdftex.def Info: ecce-eps-converted-to.pdf  used on input line 368.
 (pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
+[6]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 378.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 378.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
 Package epstopdf Info: Source file: <average_ecc_sets.eps>
-(epstopdf)                    date: 2020-01-10 16:54:18
-(epstopdf)                    size: 86174 bytes
+(epstopdf)                    date: 2020-01-15 11:56:14
+(epstopdf)                    size: 86155 bytes
 (epstopdf)             Output file: <average_ecc_sets-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-11 17:24:35
-(epstopdf)                    size: 11138 bytes
+(epstopdf)                    date: 2020-01-15 11:56:20
+(epstopdf)                    size: 11122 bytes
 (epstopdf)             Command: <repstopdf --outfile=average_ecc_sets-eps-conve
 rted-to.pdf average_ecc_sets.eps>
-(epstopdf)             \includegraphics on input line 371.
+(epstopdf)             \includegraphics on input line 381.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./average_ecc_sets-eps-converted-to.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<average_ecc_sets-eps-converted-to.pdf, id=282, 361.35pt x 252.945pt>
+<average_ecc_sets-eps-converted-to.pdf, id=290, 361.35pt x 252.945pt>
 File: average_ecc_sets-eps-converted-to.pdf Graphic file (type pdf)
 <use average_ecc_sets-eps-converted-to.pdf>
 Package pdftex.def Info: average_ecc_sets-eps-converted-to.pdf  used on input l
-ine 371.
+ine 381.
 (pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
-[6 <./semiaxis-eps-converted-to.pdf> <./ecce-eps-converted-to.pdf> <./average_e
-cc_sets-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <TGW_distribution.eps>
+(epstopdf)                    date: 2020-01-15 11:56:14
+(epstopdf)                    size: 87920 bytes
+(epstopdf)             Output file: <TGW_distribution-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-01-15 17:04:10
+(epstopdf)                    size: 10215 bytes
+(epstopdf)             Command: <repstopdf --outfile=TGW_distribution-eps-conve
+rted-to.pdf TGW_distribution.eps>
+(epstopdf)             \includegraphics on input line 390.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./TGW_distribution-eps-converted-to.pdf): PDF in
+clusion: found PDF version <1.7>, but at most version <1.5> allowed
+<TGW_distribution-eps-converted-to.pdf, id=293, 361.35pt x 252.945pt>
+File: TGW_distribution-eps-converted-to.pdf Graphic file (type pdf)
+<use TGW_distribution-eps-converted-to.pdf>
+Package pdftex.def Info: TGW_distribution-eps-converted-to.pdf  used on input l
+ine 390.
+(pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
 Package epstopdf Info: Source file: <mergers.eps>
-(epstopdf)                    date: 2020-01-10 16:54:18
-(epstopdf)                    size: 86865 bytes
+(epstopdf)                    date: 2020-01-15 11:56:14
+(epstopdf)                    size: 86824 bytes
 (epstopdf)             Output file: <mergers-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-11 17:24:35
-(epstopdf)                    size: 12568 bytes
+(epstopdf)                    date: 2020-01-15 11:56:20
+(epstopdf)                    size: 12500 bytes
 (epstopdf)             Command: <repstopdf --outfile=mergers-eps-converted-to.p
 df mergers.eps>
-(epstopdf)             \includegraphics on input line 391.
+(epstopdf)             \includegraphics on input line 399.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./mergers-eps-converted-to.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<mergers-eps-converted-to.pdf, id=313, 361.35pt x 252.945pt>
+<mergers-eps-converted-to.pdf, id=294, 361.35pt x 252.945pt>
 File: mergers-eps-converted-to.pdf Graphic file (type pdf)
 <use mergers-eps-converted-to.pdf>
-Package pdftex.def Info: mergers-eps-converted-to.pdf  used on input line 391.
+Package pdftex.def Info: mergers-eps-converted-to.pdf  used on input line 399.
 (pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
-[7 <./mergers-eps-converted-to.pdf>]
+[7 <./semiaxis-eps-converted-to.pdf> <./ecce-eps-converted-to.pdf> <./average_e
+cc_sets-eps-converted-to.pdf> <./TGW_distribution-eps-converted-to.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 408.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 408.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+Package epstopdf Info: Source file: <merger_sets.eps>
+(epstopdf)                    date: 2020-01-15 11:56:14
+(epstopdf)                    size: 85210 bytes
+(epstopdf)             Output file: <merger_sets-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-01-15 14:26:03
+(epstopdf)                    size: 10964 bytes
+(epstopdf)             Command: <repstopdf --outfile=merger_sets-eps-converted-
+to.pdf merger_sets.eps>
+(epstopdf)             \includegraphics on input line 419.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./merger_sets-eps-converted-to.pdf): PDF inclusi
+on: found PDF version <1.7>, but at most version <1.5> allowed
+<merger_sets-eps-converted-to.pdf, id=334, 361.35pt x 252.945pt>
+File: merger_sets-eps-converted-to.pdf Graphic file (type pdf)
+<use merger_sets-eps-converted-to.pdf>
+Package pdftex.def Info: merger_sets-eps-converted-to.pdf  used on input line 4
+19.
+(pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
+
+
+pdfTeX warning: pdflatex (file ./kozai_151.pdf): PDF inclusion: found PDF versi
+on <1.7>, but at most version <1.5> allowed
+<kozai_151.pdf, id=337, 361.35pt x 252.945pt>
+File: kozai_151.pdf Graphic file (type pdf)
+<use kozai_151.pdf>
+Package pdftex.def Info: kozai_151.pdf  used on input line 439.
+(pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
+[8 <./mergers-eps-converted-to.pdf> <./merger_sets-eps-converted-to.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 450.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 450.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+[9 <./kozai_151.pdf>]
 Package epstopdf Info: Source file: <horizon_IMBH.eps>
 (epstopdf)                    date: 2020-01-14 11:11:33
 (epstopdf)                    size: 87542 bytes
@@ -717,149 +792,141 @@ Package epstopdf Info: Source file: <horizon_IMBH.eps>
 (epstopdf)                    size: 9558 bytes
 (epstopdf)             Command: <repstopdf --outfile=horizon_IMBH-eps-converted
 -to.pdf horizon_IMBH.eps>
-(epstopdf)             \includegraphics on input line 438.
+(epstopdf)             \includegraphics on input line 502.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./horizon_IMBH-eps-converted-to.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<horizon_IMBH-eps-converted-to.pdf, id=359, 361.35pt x 252.945pt>
+<horizon_IMBH-eps-converted-to.pdf, id=419, 361.35pt x 252.945pt>
 File: horizon_IMBH-eps-converted-to.pdf Graphic file (type pdf)
 <use horizon_IMBH-eps-converted-to.pdf>
 Package pdftex.def Info: horizon_IMBH-eps-converted-to.pdf  used on input line 
-438.
+502.
 (pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
 
-Underfull \hbox (badness 2460) in paragraph at lines 449--451
+Underfull \hbox (badness 2460) in paragraph at lines 513--515
 \OT1/cmr/m/n/10 e-ment, $\OML/cmm/m/it/10 ^^X\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
 M[]\OT1/cmr/m/n/10 )$ the IMBH mass func-tion, and
  []
 
-
-Overfull \hbox (31.09102pt too wide) detected at line 453
-[] \OT1/cmr/m/n/10 = [][][]\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
-0 M[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 p[]e[]:
- []
-
-[8 <./horizon_IMBH-eps-converted-to.pdf>]
-Overfull \hbox (19.0575pt too wide) detected at line 475
+[10 <./horizon_IMBH-eps-converted-to.pdf>]
+Overfull \hbox (19.0575pt too wide) detected at line 560
 []
  []
 
-
-Package natbib Warning: Citation `AAG19' on page 9 undefined on input line 483.
-
-
-
-Overfull \hbox (19.0575pt too wide) detected at line 498
-[]
- []
-
-[9]
-
-pdfTeX warning: pdflatex (file ./kozai_151.pdf): PDF inclusion: found PDF versi
-on <1.7>, but at most version <1.5> allowed
-<kozai_151.pdf, id=418, 361.35pt x 252.945pt>
-File: kozai_151.pdf Graphic file (type pdf)
-<use kozai_151.pdf>
-Package pdftex.def Info: kozai_151.pdf  used on input line 555.
-(pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
 Package epstopdf Info: Source file: <freq_evo.eps>
-(epstopdf)                    date: 2020-01-10 16:54:18
+(epstopdf)                    date: 2020-01-15 11:56:14
 (epstopdf)                    size: 233824 bytes
 (epstopdf)             Output file: <freq_evo-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-11 17:24:36
+(epstopdf)                    date: 2020-01-15 11:56:21
 (epstopdf)                    size: 82065 bytes
 (epstopdf)             Command: <repstopdf --outfile=freq_evo-eps-converted-to.
 pdf freq_evo.eps>
-(epstopdf)             \includegraphics on input line 574.
+(epstopdf)             \includegraphics on input line 618.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./freq_evo-eps-converted-to.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<freq_evo-eps-converted-to.pdf, id=424, 361.35pt x 252.945pt>
+<freq_evo-eps-converted-to.pdf, id=471, 361.35pt x 252.945pt>
 File: freq_evo-eps-converted-to.pdf Graphic file (type pdf)
 <use freq_evo-eps-converted-to.pdf>
-Package pdftex.def Info: freq_evo-eps-converted-to.pdf  used on input line 574.
+Package pdftex.def Info: freq_evo-eps-converted-to.pdf  used on input line 618.
 
 (pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
-[10 <./kozai_151.pdf>]
+[11]
 Package epstopdf Info: Source file: <mergers_eccen.eps>
-(epstopdf)                    date: 2020-01-11 18:16:00
-(epstopdf)                    size: 86774 bytes
+(epstopdf)                    date: 2020-01-15 11:56:14
+(epstopdf)                    size: 86853 bytes
 (epstopdf)             Output file: <mergers_eccen-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-11 18:16:09
-(epstopdf)                    size: 7340 bytes
+(epstopdf)                    date: 2020-01-15 11:56:21
+(epstopdf)                    size: 7364 bytes
 (epstopdf)             Command: <repstopdf --outfile=mergers_eccen-eps-converte
 d-to.pdf mergers_eccen.eps>
-(epstopdf)             \includegraphics on input line 604.
+(epstopdf)             \includegraphics on input line 648.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./mergers_eccen-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<mergers_eccen-eps-converted-to.pdf, id=443, 361.35pt x 252.945pt>
+<mergers_eccen-eps-converted-to.pdf, id=490, 361.35pt x 252.945pt>
 File: mergers_eccen-eps-converted-to.pdf Graphic file (type pdf)
 <use mergers_eccen-eps-converted-to.pdf>
 Package pdftex.def Info: mergers_eccen-eps-converted-to.pdf  used on input line
- 604.
+ 648.
 (pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
-[11 <./freq_evo-eps-converted-to.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 612.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 612.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
 Package epstopdf Info: Source file: <example_signal.eps>
-(epstopdf)                    date: 2020-01-11 17:39:50
-(epstopdf)                    size: 208722 bytes
+(epstopdf)                    date: 2020-01-15 11:59:57
+(epstopdf)                    size: 223286 bytes
 (epstopdf)             Output file: <example_signal-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-01-11 17:57:19
-(epstopdf)                    size: 81751 bytes
+(epstopdf)                    date: 2020-01-15 12:00:06
+(epstopdf)                    size: 84504 bytes
 (epstopdf)             Command: <repstopdf --outfile=example_signal-eps-convert
 ed-to.pdf example_signal.eps>
-(epstopdf)             \includegraphics on input line 615.
+(epstopdf)             \includegraphics on input line 659.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./example_signal-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<example_signal-eps-converted-to.pdf, id=459, 361.35pt x 252.945pt>
+<example_signal-eps-converted-to.pdf, id=494, 361.35pt x 252.945pt>
 File: example_signal-eps-converted-to.pdf Graphic file (type pdf)
 <use example_signal-eps-converted-to.pdf>
 Package pdftex.def Info: example_signal-eps-converted-to.pdf  used on input lin
-e 615.
+e 659.
 (pdftex.def)             Requested size: 242.26653pt x 169.58806pt.
-(./article.bbl [12 <./mergers_eccen-eps-converted-to.pdf> <./example_signal-eps
--converted-to.pdf>]) [13]
+[12 <./freq_evo-eps-converted-to.pdf>]
 
-Package natbib Warning: There were undefined citations.
+LaTeX Warning: Reference `' on page 13 undefined on input line 669.
 
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 647.
-(./article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 647.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 647.
+
+LaTeX Warning: Reference `' on page 13 undefined on input line 670.
+
+
+LaTeX Warning: Reference `' on page 13 undefined on input line 672.
+
+
+LaTeX Warning: Reference `' on page 13 undefined on input line 673.
+
+
+LaTeX Warning: Reference `' on page 13 undefined on input line 674.
+
+[13 <./mergers_eccen-eps-converted-to.pdf> <./example_signal-eps-converted-to.p
+df>]
+
+LaTeX Warning: Reference `' on page 14 undefined on input line 675.
+
+
+LaTeX Warning: Reference `' on page 14 undefined on input line 676.
+
+
+LaTeX Warning: Reference `' on page 14 undefined on input line 677.
+
+
+LaTeX Warning: Reference `' on page 14 undefined on input line 678.
+
+
+LaTeX Warning: Reference `' on page 14 undefined on input line 679.
+
+(./article.bbl [14]) [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 704.
+ (./article.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 704.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 704.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 10387 strings out of 494880
- 142961 string characters out of 6179600
- 302194 words of memory out of 5000000
- 13427 multiletter control sequences out of 15000+600000
+ 10439 strings out of 494880
+ 143952 string characters out of 6179600
+ 356781 words of memory out of 5000000
+ 13467 multiletter control sequences out of 15000+600000
  14217 words of font info for 57 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 35i,12n,37p,1172b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,10n,37p,7882b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texliv
@@ -883,10 +950,10 @@ msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on article.pdf (13 pages, 650240 bytes).
+Output written on article.pdf (15 pages, 682026 bytes).
 PDF statistics:
- 592 PDF objects out of 1000 (max. 8388607)
- 513 compressed objects within 6 object streams
- 119 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 646 PDF objects out of 1000 (max. 8388607)
+ 559 compressed objects within 6 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
