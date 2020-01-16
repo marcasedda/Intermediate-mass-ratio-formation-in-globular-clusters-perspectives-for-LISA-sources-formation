@@ -87,7 +87,9 @@ Zentrum f{\"u}r Astronomie und Astrophysik, TU Berlin, Hardenbergstra{\ss}e 36, 
 % Conclusions: What are the implications of our answer?
 % ======================================================
 %
-We study the formation and evolution of intermediate mass ratio inspirals (IMRIs) triggered by the interactions between stellar black holes and an intermediate black hole (IMBH) inhabiting. We show the probability for an IMRI to form is an increasing function of the IMBH mass, representing a viable channel for the development of gravitational wave sources that can be possibly observed with the future generation of detectors.
+We study the formation and evolution of intermediate mass ratio inspirals (IMRIs) triggered by the interactions between two stellar black holes (BHs) and an intermediate black hole (IMBH) inhabiting a globular cluster. We show that the probability for IMRIs formation is an increasing function of the IMBH mass {\color{red} we need a figure on this point, ready but not yet included in the text}. In general, we find that IMRIs have a formation probability $\sim 15\%$, regardless of the assumptions made. Our results suggest that in low-density clusters these interactions lead to the formation of stable triples, a fraction of which arrange in a hierarchical configurations and undergo Kozai-Lidov oscillations. In dense clusters, instead, the most frequent configuration is unstable, with the IMBH and the closest BH being strongly affected by the chaotic perturbations exerted by the third BH. We calculate IMRIs horizon redshift for several ground- and space-based gravitational waves (GWs) observatories. Combining this information with our results and observational limits on the cosmological distribution of galaxies and star clusters, we infer the IMRI merger rate for different detectors. Assuming a 4 yr observation timespan, we infer a merger rate of 1-4 events yr$^{-1}$ for LIGO in the IMRIs mass range $100-250\Ms$ up to redshift $z=0.1-0.6$, 1-30 yr$^{-1}$ for LISA ($M_{\rm imri} > 10^3\Ms$) up to redshift $z=1.5$. The next generation of detectors will allow us to observe IMRI out to the peak of GC formation and even beyond, with an expected rate of $200-2000$ yr$^{-1}$ for ET ($M_{\rm imri} < 10^3\Ms$) and $250-4400$ yr$^{-1}$ for DECIGO ($M_{\rm imri} < 60 - 5\times 10^4 \Ms$). We show that a considerable number of sources can be observed are multiband thus can be observed with both low- and high-frequency detectors, especially in the case of future detectors. Although highly eccentric at formation, we find that only $\sim 1\%$ of IMRI will preserve a high eccentricity when entering the mHz frequency band. 
+
+
 \end{abstract}
 
 \keywords{black holes - supermassive black holes - galactic nuclei - gravitational waves}
@@ -252,16 +254,19 @@ Our simulations are performed taking advantage of \ARGdf \citep{ASCD19}, a modif
 \begin{table*}
 \begin{center}
 \caption{Main properties of our models}
-\begin{tabular}{cccccccccccc}
+\begin{tabular}{cccccccccc}
 \hline
-model   & $f(\Log M_\ibh)$ & $M_\ibh$ & $\delta_\bh$ & $M_\bh$ & $a_\inn$ & $P(e_\inn)$ & $a_\out$ & $P(e_\out)$ &$P(\cos(i))$ &Cluster scaling & $N_{\rm sim}$\\ 
-        &             & $\Ms$    &            & $\Ms$   & $\au$    &          & $\au$    &         &  &relation &\\
+model   & $M_\ibh$ & $\delta_\bh$ & $M_\bh$ & $a_\inn$ & $a_\out$ & $P(e)$ &$P(\cos(i))$ &Cluster scaling & $N_{\rm sim}$\\ 
+        & $\Ms$    &            & $\Ms$   & $\au$    &  $\au$    &         &  &relation &\\
 \hline 
-0 & const & $10^2-5\times 10^5$ & $-2.2$ & $10-30$ & $10-315$ & $e^2$ & $20-630$ & $e^2$ & const&$M_\ibh -M_\gc$ & 2000\\
-1 & const & $10^2-5\times 10^5$ & $-2.2$ & $10-30$ & $10-315$ & $e^2$ & $20-630$ & $e^2$ & const&$M_\ibh -\sigma_\gc$ & 2000\\
-2 & const & $10^2-5\times 10^5$ & $-2.2$ & $10-30$ & $10-315$ & $e^2$ & $630-1580$ & $e^2$ &const &$M_\ibh -M_\gc$ & 2000\\
+0 & $10^2-5\times 10^5$ & $-2.2$ & $10-30$ & $10-315$ & $20-630$ & $2e$ & const&$M_\ibh -M_\gc$ & 2000\\
+1 & $10^2-5\times 10^5$ & $-2.2$ & $10-30$ & $10-315$ & $20-630$ & $2e$ & const&$M_\ibh -\sigma_\gc$ & 2000\\
+2 & $10^2-5\times 10^5$ & $-2.2$ & $10-30$ & $10-315$ & $630-1580$ & $2e$ &const &$M_\ibh -M_\gc$ & 2000\\
 \hline
 \end{tabular}
+\begin{tablenotes}
+\item Col. 1: model ID. Col. 2: mass of the IMBH, we adopt a sampling flat in logarithmic values. Col. 3: slope of the BH mass function adopted. Col. 4: range of masses adopted for stellar BHs. Col. 5-6: range of initial values for the inner/outer semimajor axis, we adopt a sampling flat in  logarithmic values. Col. 7-8: adopted distribution for initial eccentricity/inclination. Col. 9: adopted scaling to connect the IMBH and the cluster masses. Col. 10: Number of simulations performed.
+\end{tablenotes}
 \end{center}
 \label{tab:t2}
 \end{table*}
@@ -273,11 +278,14 @@ model   & $f(\Log M_\ibh)$ & $M_\ibh$ & $\delta_\bh$ & $M_\bh$ & $a_\inn$ & $P(e
 
 
 \subsection{IMRIs formation channels and subsequent evolution}
-
+\label{sec:imris}
 The evolution of the IMBH-BH-BH triple immersed in the host cluster gravitational field can lead to very different outcomes, as shown in Figure \ref{fig:f3}:
 \begin{itemize}
-    \item {\bf Disrupted triple} The three-body interaction undergoes a chaotic phases that ultimately lead to the ejection of a stellar BHs, whereas the inner binary either preserves its original components or undergoes a component swap.
-    \item {\bf Hierarchical triple.} The triple arranges in a hierarchical configuration, with the outer BHs perturbing secularly the evolution of the inner binary. In this case, the inner binary can develop Kozai-Lidov oscillations \citep{kozai62,lidov62} that can trigger its eccentricity to grow to values close to unity. 
+    \item {\bf Disrupted triple.} The three-body interaction undergoes a chaotic phases that ultimately lead to the ejection of a stellar BHs, whereas the inner binary either preserves its original components or undergoes a component swap.
+    \item {\bf Stable triple.} The triple arranges in a configuration that satisfies the stability criterion for three-body systems. 
+	\begin{itemize}
+		\item {\bf Hierarchical triple.}  The triple arranges in a hierarchical configuration, with the outer BHs perturbing secularly the evolution of the inner binary. In this case, the inner binary can develop Kozai-Lidov oscillations \citep{kozai62,lidov62} that can trigger its eccentricity to grow to values close to unity. 
+	\end{itemize}
     \item {\bf Unstable triple.} The inner and outer binary are in an unstable configuration, whose evolution is mostly dominated by chaos.
 \end{itemize}
 
@@ -298,7 +306,14 @@ t_\gw =&  \displaystyle \frac{5}{256}\frac{c^5 a_\inn^4 (1-e_\inn^2)^{7/2}}{G^3M
 
 We note that for circular IMBH-BH binary in our model ($a_\inn=10\au$) the corresponding merger timescale is $t_\gw \sim 10^{14}$ yr, thus implying that some external perturbation is needed to trigger IMRI formation within a Hubble time.
 
-In the second case, the triple arranges in a hierarchical configuration, whose evolution is dominated by secular perturbations. This mechanism, known as Kozai-Lidov \citep{kozai62,lidov62}, can induce periodic oscillations in the mutual inclination and the inner binary eccentricity. A parameter widely used to discern hierarchical triples is defined as \citep{Lithwick11,naoz11}
+In the second case, the triple is dynamically stable and the effects of perturbations arising from one of the component emerges secularly.  According to the \cite{mardling01} criterion, a triple is stable if
+\begin{equation}
+    \frac{a_\out}{a_\inn} > \frac{2.8}{1-e_\out}\left(1-\frac{0.3i}{\pi}\right)\left[\frac{(1+q_\out)(1+e_\out}{\sqrt{1-e_\out}}\right]^{2/5}, 
+\label{stabcri}
+\end{equation}
+being $q_\out = m_\out/(m_\imbh + m_\bh)$.
+
+If the triple arranges in a hierarchical configuration, its evolution can be dominated by secular perturbations known as Kozai-Lidov \citep{kozai62,lidov62}, which can induce periodic oscillations in the mutual inclination and the inner binary eccentricity. A parameter widely used to discern hierarchical triples is defined as \citep{Lithwick11,naoz11}
 \begin{equation}
 \epsilon_\kl = \frac{M_\imbh - m_\bh }{M_\imbh + m_\bh} \frac{a_{\inn}}{a_{\out}}\frac{e_{\out}}{(1-e_{\out}^2)},
 \end{equation}
@@ -311,13 +326,11 @@ In this configuration, the eccentricity can increase up to values close to unity
 \end{equation}
 being $e_{\rm max}$ the maximum eccentricity achieved by the inner binary. 
 
-In the case of an unstable triple, the inner and outer binaries have similar orbital properties and dynamics is mostly dominated by chaotic interactions. According to the \cite{mardling01} criterion, a triple is unstable if
-\begin{equation}
-    \frac{a_\out}{a_\inn} < \frac{2.8}{1-e_\out}\left(1-\frac{0.3i}{\pi}\right)\left[\frac{(1+q_\out)(1+e_\out}{\sqrt{1-e_\out}}\right]^{2/5}, 
-\end{equation}
-being $q_\out = m_\out/(m_\imbh + m_\bh)$.
+In the case of an unstable triple, the inner and outer binaries have similar orbital properties and dynamics is mostly dominated by chaotic interactions.
 
-In our models, we calculate $\epsilon_\kl$ and $a_\out/a_\inn$ at the end of the simulations, in order to identify to which category a triple belongs. The merger time for the inner binary is calculated through Equation \ref{peters} for models categorized as ``Disrupted'' or ``Unstable'', whereas we use Equation \ref{kozai} for those identified as ``Hierarchical''. 
+In our models, we calculate $\epsilon_\kl$ and $a_\out/a_\inn$ at the end of the simulations, in order to identify to which category a triple belongs. 
+In the case of models categorized as ``Disrupted'', the merger time is calculated simply via 
+Equation \ref{peters}. For ``Hierarchical'' models, instead, we adopt Equation \ref{kozai}. Finally, for both ``Stable'' and ``Unstable'' models, the merger time is inferred as the average of the initial and final merger time and the same quantity evaluated in correspondence of the maximum eccentricity. Note that for ``Stable'' triples the merger time does not change dramatically over the simulated time.
 
 \subsection{IMRIs properties}
 
@@ -325,7 +338,8 @@ We mark as IMRI candidates all IMBH-BH that, by the end of the simulations, have
 
 We find quite similar results in both SET0 and SET1, thus implying that both the host cluster mass does not change significantly from one method to the other, and that the external potential has a little effect on the triple evolution. The latter is due to the fact that we are looking in the immediate cluster centre vicinity, where dynamics is dominated by the IMBH.
 
-In SET0, an IMRI develop in $212$ cases out of 2000, i.e. $f_{\rm mer} = 10.6\%$ of formation probability. Concerning the formation channel, $8\%$ of IMRIs formed from Disrupted, $66.5\%$ from Hierarchical, and $25.5\%$ from Unstable . Similarly, in SET1 we find $268$ IMRIs ($13.4\%$), $4.9\%$ of them formed from Disrupted, $67.9\%$ from Hierarchical triples, and $27.2\%$ from Unstable. All IMRIs formation probability for different channels are summarized in Table \ref{tab:t3}.
+In SET0, an IMRI develop in $259$ cases out of 2000, i.e. $f_{\rm mer} = 12.95\%$ of formation probability. Concerning the formation channel, $6.6\%$ of IMRIs formed from Disrupted, $61.4\%$ from Stable, and $32\%$ from Hierarchical. Similarly, in SET1 we find $312$ IMRIs ($15.6\%$), $4.2\%$ of them formed from Disrupted, $62.8\%$ from Stable triples, and $33\%$ from Hierarchical. In SET2, we still find a similar merger probability ($f_{\rm mer} = 15.36\%$), but in this case the number of Hierarchical configurations outnumbers the other class of merger candidates covering the $83.7\%$ of the whole merger population. This is due to the fact that a larger outer semiaxis makes easier to satisfy the stability criterion in Equation \ref{stabcri}.
+All IMRIs formation probability for different channels are summarized in Table \ref{tab:t3}. 
 
 \begin{table}
     \centering
@@ -333,11 +347,12 @@ In SET0, an IMRI develop in $212$ cases out of 2000, i.e. $f_{\rm mer} = 10.6\%$
     \begin{tabular}{cccccc}
         \hline
         \hline 
-        model& $f_{\rm mer}$ & $f_{\rm mer,D}$ & $f_{\rm mer,H}$ & $f_{\rm mer,U}$\\
+        model& $f_{\rm mer}$ & $f_{\rm mer,D}$ & $f_{\rm mer,U}$ & $f_{\rm mer,H}$\\
              & $\%$& $\%$& $\%$& $\%$\\
         \hline
-        SET0 & $10.6$ & $8.0$ & $66.5$ & $25.5$ \\
-        SET1 & $13.4$ & $4.9$ & $67.9$ & $27.2$ \\
+		SET0 & $12.95$ & $6.6$ & $61.4$ & $32$ \\
+		SET1 & $15.60$ & $4.2$ & $62.8$ & $33$ \\
+		SET2 & $15.36$ & $2.3$ & $14$   & $83.7$ \\
         \hline
     \end{tabular}
     \label{tab:t3}
@@ -359,11 +374,7 @@ The top panel shows clearly that the semi-major axis distribution of merging bin
 \subsection{The role of the IMBH mass}
 
 To explore the dependence between IMRI candidates eccentricity at formation and IMBH mass, we take the eccentricity directly from the last snapshot for models targeted as ``Disrupted'' and ``Unstable'', while for ``Hierarchical'' we record the maximum eccentricity. We then calculate the mean eccentricity value $\langle e_\gw\rangle$  in different mass bins, making the same for the subset of IMRI candidates, as shown in Figure \ref{fig:f4}. In general, it seems that, regardless of the set, IMRI candidates with masses below $5\times10^3\Ms$ have, on average, $\langle e_\gw\rangle$ larger compared to the whole simulations sample, while this trend reverses for heavier IMRIs. 
-
-The average eccentricity increases in the $10^2-5\times10^3\Ms$ mass range, peaking at around $500-1000\Ms$, and than decreases rapidly at increasing the IMBH mass.This implies that the evolution of the inner binary leads the eccentricity to achieve larger values in correspondence of lighter IMBHs. 
-
-We find that IMBHs with masses typical of star clusters $10^3<M_\ibh/\Ms<10^4$ are expected to form, on average, extremely eccentric IMRIs, while the eccentricity at formation attains more moderate values at IMBH masses typical of low-mass dwarf galaxies and nuclear clusters.
-
+The average eccentricity increases in the $10^2-5\times10^3\Ms$ mass range, peaking at around $500-1000\Ms$, and than decreases rapidly at increasing the IMBH mass.This implies that the evolution of the inner binary leads the eccentricity to achieve larger values in correspondence of lighter IMBHs. We find that IMBHs with masses typical of star clusters $10^3<M_\ibh/\Ms<10^4$ are expected to form, on average, extremely eccentric IMRIs, while the eccentricity at formation attains more moderate values at IMBH masses typical of low-mass dwarf galaxies and nuclear clusters.
 While affecting the eccentricity, the IMBH mass does not have a significant effect on the companion BH mass. Indeed, IMRIs light component masses follows the assumed BH mass distribution. 
 
 \begin{figure}
@@ -373,64 +384,118 @@ While affecting the eccentricity, the IMBH mass does not have a significant effe
 \label{fig:f5}
 \end{figure}
 
-In order to uncover what is the role played by the IMBH in determining IMRIs formation, we calculate the 
-percentage of IMRIs formed in different mass bins. This quantity, namely $f_{\rm mer}$, represents {\it de facto} IMRIs formation probability. We find that $f_{\rm mer}$ follows quite a precise trend, regardless of the set, thus in what follows we focus on SET0 only, for clarity's sake. Figure \ref{fig:f5} shows the $f_{\rm mer}-M_\ibh$ relation. We differentiate between IMRIs forming in disrupted triples, in a hierarchical or unstable configuration. 
+The merger times associated with IMRIs show a broad distribution regardless of the models set considered. Figure \ref{fig:f6} shows the cumulative distribution of $t_\gw$ calculated as discussed in Section \ref{sec:imris}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{TGW_distribution}
+\caption{Cumulative distribution of IMRI merger times for all the models investigated.}
+\label{fig:f6}
+\end{figure}
+
+In order to uncover what is the role played by the IMBH in determining IMRIs formation, we calculate the percentage of IMRIs formed in different mass bins. This quantity, namely $f_{\rm mer}$, represents {\it de facto} IMRIs formation probability. We find that $f_{\rm mer}$ follows quite a precise trend, regardless of the set, thus in what follows we focus on SET0 only, for clarity's sake.
+
+\begin{figure}
+	\centering
+    \includegraphics[width=\columnwidth]{mergers}
+	\caption{IMRIs formation probability as a function of the IMBH mass for SET0. Red open squares shows all the models that are in an either stable or hierarchical configuration at the end of the simulation. Open dark blue circles identify IMRIs. From larger to smaller circles, blue filled circles represent IMRIs formed from unstable, hierarchical, and disrupted triples.}
+	\label{fig:f7}
+\end{figure}
+
+Figure \ref{fig:f7} shows the $f_{\rm mer}-M_\ibh$ relation in the case of SET0. We differentiate between IMRIs forming in disrupted triples, in a hierarchical or unstable configuration. 
 Our results suggest that an IMBH-BH-BH has a $10\%$ of probability to arrange in a hierarchical configuration, regardless of the IMBH mass or the GW timescale. IMRIs formation probability, instead, increases weakly with IMBH mass, increasing from $\sim 2\%$ for $M_\ibh \simeq 10^2$ to up to $15\%$ for heavy IMBH, $M_\ibh>10^5\Ms$.
 
 At IMBH mass values below $10^4\Ms$, we find that Hierarchical and Unstable systems contribute equally to the whole IMRI population, while at larger IMBH masses the majority of IMRIs is comprised of Unstable triples. IMRIs forming out of Disrupted triples give little contribution to the population, being their formation probability only $0.5-1\%$.
 
-In the IMBH mass range $M_\ibh>10^3\Ms$, the IMRIs formation probability is well described by a simple powerlaw
+Figure \ref{fig:f8} shows how $f_{\rm mer}$ varies for the three set explored. In the IMBH mass range $M_\ibh>10^3\Ms$, this relation is well described by a simple powerlaw
 \begin{equation}
 f_{\rm mer} = \alpha \left(\frac{M_\ibh}{10^2\Ms}\right)^\beta,
 \label{fmerg}
 \end{equation}  
-with $\alpha = (7\pm2)\times 10^{-3}$ and $\beta = 0.45\pm0.03$. 
+with $\alpha = (1.5\pm0.2)\times 10^{-2}$ and $\beta = 0.39\pm0.02$. 
+
 
 \begin{figure}
     \centering
-    \includegraphics[width=\columnwidth]{mergers.eps}
-    \caption{Percentage for IMRIs formation as a function of IMBH mass. Red open squares shows all the models that are hierarchical at the end of the simulation. Open dark blue circles identify IMRIs. From larger to smaller circles, blue filled circles represent IMRIs formed from unstable, hierarchical, and disrupted triples.}
-    \label{fig:f5}
+    \includegraphics[width=\columnwidth]{merger_sets.eps}
+    \caption{IMRIs formation probability as a function of the IMBH mass for the three simulated sets.}
+    \label{fig:f8}
 \end{figure}
 
 Our simulations suggest that whenever a three-body encounter occurs in a GC containing a $10^4\Ms$ IMBH, there is a $\sim 10\%$ of the probability for IMRIs formation and the eccentricity at formation is of the order of 0.95. 
 
+\subsection{The serendipitous formation of stellar BH binaries around an IMBH}
+
+Among all the runs performed, we find two interesting cases, namely s151 and s400, in which the stellar mass BHs are initially sufficiently close to form a tight binary. In both cases, the IMBH mass is relatively small $M_{\ibh} = 100\Ms$, and the inner binary is comprised of the other two, stellar-mass, BHs. It is not surprising that a BH-BH pair forms in a model with low-mass IMBH, due to the lower velocity dispersion and the larger tidal radius needed for the binary to form without being ripped apart from the IMBH. In both cases, the BH-BH binary undergoes Kozai-Lidov oscillations, which periodically induce an increase in the binary eccentricity and the mutual inclination.
+
+In model s400, the amplitude of the oscillation is minimal, the mutual inclination ranges between $i = 126-130^\circ$, while the eccentricity varies in the range $e = 0.882-0.904$. Although the KL effect is not very efficient in affecting the BH-BH evolution, the binary is sufficiently tight to have a short merger timescale, being $t_{\rm gw} \simeq 3\times 10^7$ yr.
+
+In model s151, instead, the Kozai-Lidov effect is more effective, leading the inclination to vary strongly in the range $\sim 40-90^\circ$ and the eccentricity to rise up to $e = 0.99$. The time evolution of both $e$ and $i$ is shown in Figure \ref{F9}, together with the associated merger time-scale. 
+In this particular simulation, the reduction of the merger time related to the episodic GW emission as described in Equation \ref{kozai}, trigger the BH binary coalesce in a time $5600$ times smaller than the time needed for the same binary to merge in isolation.
+
+In both the cases that we find, the IMBH mass is $M_\ibh=100\Ms$. Heavier IMBHs would make BH-BH pairing much harder, because of the higher velocity dispersion and the larger gravitational influence. Having 250 simulations with $M_\ibh=100\Ms$ in each set, we can infer BH-BH formation probability as $P_{\rm bhb} = 0.8\%$.
+
+\begin{figure}
+\centering 
+\includegraphics[width=\columnwidth]{kozai_151}
+\caption{Top panel: time evolution of the merger timescale for model number 151, in which two BHs pair together while the IMBH acts as a perturber. Central panel: mutual inclination as a function of time for the BH-BH pair in simulation number 151. Bottom panel: ecentricity as a function of time for the BH-BH pair in simulation number 151.}
+\label{F9}
+\end{figure}
+
+
 \subsection{IMRIs merger rate}
 
-Previous studies based on full consistent N-body simulations of star clusters containing IMBHs with various masses and general properties  \citep{konstantinidis13,haster16,leigh14, macleod16} have shown that binary formation involving an IMBH takes place at a rate of $R_{\rm bin} \sim 10^{-7}$ yr. Assuming typical ages for globular-like star clusters of $t_{\rm age}\sim 10^{10}$ yr and assuming that IMBH buildup occurs in the clusters early lifetime ($\lesssim 1$ Gyr), we can use the merger probability fitting function depicted in Equation \ref{fmerg} to infer IMRIs merger rate per typical cluster
+Previous studies based on full consistent N-body simulations of star clusters containing IMBHs with various masses and general properties  \citep{konstantinidis13,haster16,leigh14, macleod16} have shown that binary formation involving an IMBH takes place at a rate of $R_{\rm bin} \sim 10^{-7}$ yr. Assuming typical ages for globular-like star clusters of $t_{\rm age}\sim 10^{10}$ yr and assuming that IMBH buildup occurs in the clusters early lifetime ($\lesssim 1$ Gyr), we can use the merger probability fitting function depicted in Equation \ref{fmerg} to infer the total number of IMRIs formed for a given IMBH mass and over a cluster lifetime $t_{\rm age}$
 \begin{equation}
-    \Gamma(M_\ibh) = R_{\rm bin}t_{\rm age}f_{\rm mer} \sim 0.7\left(\frac{M_{\ibh}}{10^2\Ms}\right)^{0.45},
+    N_\gc(M_\ibh) = R_{\rm bin}t_{\rm age}f_{\rm mer} \sim 15\left(\frac{M_{\ibh}}{10^2\Ms}\right)^{0.38},
 \end{equation}
-ranging from $\Gamma_{\imri} = 7-50$ yr$^{-1}$ for $M_\ibh = 10^2-10^4\Ms$, respectively.
-To put such a quantity in the context of MW-like galaxies, we need to make assumptions on the IMBH putative mass function. As recently suggested by Arca Sedda et al (in prep.), out of the 151 Galactic GCs currently known, around 35 might be harbouring, at present time, an IMBH with mass in the range $10^3-10^4\Ms$. They find that the mass distribution of these putative IMBHs can be described by a Maxwellian in the form 
+ranging from $\Gamma_{\imri} = 15-90$ yr$^{-1}$ for $M_\ibh = 10^2-10^4\Ms$, respectively.
+To put such a quantity in the context of MW-like galaxies, we need to make assumptions on the IMBH putative mass function. Assuming that the initial mass function of GCs follows a power-law and exploiting Equation \ref{mcmibh}, we can write the IMBH mass function as $f(M_\ibh) = k (M_\ibh/10^\alpha)^{1/beta}$. The normalization constant $k$ can be calculated by assuming that the mass in clusters constitute a fraction of the total galaxy mass:
 \begin{equation}
-    f(x_\ibh) = \frac{a}{\sigma\sqrt(2\pi)}\exp{\left(-\frac{\left(x_\ibh - \mu\right)^2}{ (2\sigma^2)}\right)},
+k = \frac{\delta M_g (2-s)}{(M_{\gc 2}^{2-s} - M_{\gc 1}^{2-s})},
+\label{normal}
 \end{equation}
-with $x_\ibh\equiv \Log M_\ibh$, and $a=0.14\pm0.3$ , $\mu = 4.01\pm0.09$ and $\sigma = 0.4\pm0.1 $.
+with $\delta = 5\times 10^{-4}$ \citep{webb15,belczinski17}, $M_g = 6\times 10^{10}\Ms$ and $M_{\gc 1,2} = (5\times 10^3 - 8\times 10^6)\Ms$ the range of GC initial masses allowed. 
 
-Combining equations above, we can define a IMRI merger rate for MW-like galaxies as
-\begin{equation}
-    \Gamma_{\rm MW} = f_\ibh N_\gc \int \Gamma(M_\ibh) f(x_\ibh) {\rm d}M_\ibh,
-\end{equation}
-where $f_\ibh N_\gc$ is the number of GCs containing an IMBH. This equation has analytical solution
-which has analytical solution
+%As recently suggested by \cite{AAG19}, out of the 151 Galactic GCs currently known, around 35 might be harbouring, at present time, an IMBH with mass in the range $10^3-10^4\Ms$. They find that the mass distribution of these putative IMBHs can be described by a Maxwellian in the form 
+%\begin{equation}
+%    f(x_\ibh) = \frac{a}{\sigma\sqrt(2\pi)}\exp{\left(-\frac{\left(x_\ibh - \mu\right)^2}{ (2\sigma^2)}\right)},
+%\end{equation}
+%with $x_\ibh\equiv \Log M_\ibh$, and $a=0.14\pm0.3$ , $\mu = 4.01\pm0.09$ and $\sigma = 0.4\pm0.1 $.
+Combining equations above, we can infer the total number of IMRIs  MW-like galaxies as
 \begin{align}
- \frac{\Gamma_{\rm MW} (x_\ibh)}{f_\ibh N_\gc} =&   \frac{a}{2} (A + B\mu) {\rm erf}\left(\frac{x_\ibh-\mu}{\sigma\sqrt{2\pi}} \right) + \nonumber\\
-                                & - \frac{a}{\sqrt(2\pi)}B \sigma \exp{\left(\frac{-\left(x_\ibh-\mu\right)^2}{2\sigma^2}\right)},
+    N_{\rm MW} =& f_\ibh N_\gc \int_{M_{\ibh ,1}}^{M_{\ibh ,2}} \Gamma(M_\ibh) \times \nonumber \\
+    & \times f(M_\ibh) \frac{\derd M_\gc}{\derd M_\ibh} {\rm d}M_\ibh,
 \end{align}
- the coefficients $A = \alpha -\beta \Log(100)$ and $B \equiv \beta$ are conveniently manipulated from Equation \ref{fmerg}.
-
-Assuming a typical IMBH population spanning the mass range $10^2-10^4\Ms$, a number of GCs $N_\gc = 151$, a fraction $f_\ibh \simeq 35/151$ of GCs hosting an IMBH we can infer the MW-IMRI rate 
+where $f_\ibh N_\gc$ is the number of GCs containing an IMBH, and the term $\derd M_\gc / \derd M_\ibh$ is used to perform a change of variable from the GC to the IMBH mass. The integral has analytical solution in the form
 \begin{equation}
-\Gamma_{\rm MW,IMRI} \simeq 4\times 10^{-3} {\rm MW}^{-1} {\rm yr}^{-1}
+N_{\rm MW} = K \frac{M_{\ibh ,2}^{\beta + b(1-s)} - M_{\ibh ,1}^{\beta + b(1-s)}}{\beta + b(1-s)},
 \end{equation}
+with the parameter $K$ containining all the constant factors.
 
+%
+%
+%
+% \frac{\Gamma_{\rm MW} (x_\ibh)}{f_\ibh N_\gc} =&   \frac{a}{2} (A + B\mu) {\rm erf}\left(\frac{x_\ibh-\mu}{\sigma\sqrt{2\pi}} \right) + \nonumber\\
+%                                & - \frac{a}{\sqrt(2\pi)}B \sigma \exp{\left(\frac{-\left(x_\ibh-\mu\right)^2}{2\sigma^2}\right)},
+%\end{align}
+% the coefficients $A = \alpha - \beta\ln(100)$ and $B \equiv \beta$ are conveniently manipulated from Equation \ref{fmerg}.
+%Assuming a typical IMBH population spanning the mass range $10^2-10^4\Ms$, a number of GCs $N_\gc = 151$, a fraction $f_\ibh \simeq 35/151$ of GCs hosting an IMBH we can infer the MW-IMRI rate 
+%\begin{equation}
+%\Gamma_{\rm MW,IMRI} \simeq 4\times 10^{-3} {\rm MW}^{-1} {\rm yr}^{-1}
+%\end{equation}
+Assuming $t_{\rm age} = 10$ Gyr and in the IMBH mass range of $10^2 - 10^4\Ms$, we derive an IMRI merger rates for MW-like galaxies of
+\begin{equation}
+\Gamma_{\rm MW} = 2.26\times 10^{-5} {\rm ~yr} \left(\frac{10{\rm ~Gyr}}{t_{\rm age}}\right)\left(\frac{f_\ibh}{0.2}\right)\left(\frac{N_\gc}{180}\right).
+\end{equation}
+The number of MW-analogs in the local Universe (redshift $z<0.1$) is roughly proportional to the luminosity distance $D_L$, namely $P_{\rm MW} = 4\pi/3 \times 0.0116(2.26)^{-3}D_L^3$ with $D_L$ expressed in Mpc \citep{abadie10}. Thus a rough estimate of potential IMRIs developing in MW-like galaxies in the local Universe is given by $\Gamma_{\rm MW} \times P_{\rm MW} = 10.5$ yr$^{-1}$.
+This is a simple estimate, though, which not account for the distribution of galaxies across different redshift or the actual volume within which a detector is sensitive.
 The launch of the LISA detector and the start of operations of the next generation of GW observatories like the Einstein Telescope (ET) will enable us to observe this kind of objects at cosmological distances. Therefore, to infer the IMRI merger rates, we need to take into account in our calculation how the number density of galaxies varies across redshift $z$.
 The GW source {\it horizon} determines the maximum distance in space, or the redshift $z_{\rm hor}$, at which the source signal is detected with a threshold signal-to-noise ratio (SNR), namely:
 \begin{equation}
 {\rm SNR^2} = \int_{f_1}^{f_2} \displaystyle{\frac{h_c^2(f,z_{\rm hor})}{S_n^2(f)}} {\rm d}f,
 \end{equation}
-with $f_{1,2}$ the initial and final frequency of the GW signal, $h_c(f,z)$ its characteristic strain, and $S_n(f)$ its sensitivity. To determine this quantity, we integrate the final stage of the IMRI signal assuming an observation time of 4 yr -- i.e. the nominal duration time of the LISA mission -- and we calculate the value of $z_{\rm hor}$ at which we get an SNR of 15. We assume the set of cosmological parameters measured by the Planck mission, namely $H_0 = 67.74$ km/s/Mpc$^{3}$, $\Omega_m = 0.3089$, $\Omega_\Lambda = 0.6911$ [ADD CIT TO PLANCK15]. To calculate $z_{\rm hor}$, we vary the IMBH mass in the range $50-10^6\Ms$ assuming that the companion has a mass of either $10$ or $30\Ms$. Figure \ref{fig:fhor} shows how the horizon redshift changes for four different detectors: the Laser Interferometer Space Antenna \citep[LISA\footnote{\url{https://www.elisascience.org/}},][]{amaro12}, the Deciherz Gravitational-Wave Observatory \citep[DECIGO\footnote{\url{http://tamago.mtk.nao.ac.jp/spacetime/decigo_e.html}},][]{seto01}, the Einstein Telescope \citep[ET\footnote{\url{http://www.et-gw.eu/}},][]{punturo10}, and LIGO. 
+with $f_{1,2}$ the initial and final frequency of the GW signal, $h_c(f,z)$ its characteristic strain, and $S_n(f)$ its sensitivity. To determine this quantity, we integrate the final stage of the IMRI signal assuming an observation time of 4 yr -- i.e. the nominal duration time of the LISA mission -- and we calculate the value of $z_{\rm hor}$ at which we get an SNR of 15. We assume the set of cosmological parameters measured by the Planck mission, namely $H_0 = 67.74$ km/s/Mpc$^{3}$, $\Omega_m = 0.3089$, $\Omega_\Lambda = 0.6911$ \citep{planck15}. To calculate $z_{\rm hor}$, we vary the IMBH mass in the range $50-10^6\Ms$ assuming that the companion has a mass of either $10$ or $30\Ms$. Figure \ref{fig:fhor} shows how the horizon redshift changes for four different detectors: the Laser Interferometer Space Antenna \citep[LISA\footnote{\url{https://www.elisascience.org/}},][]{amaro12}, the Deciherz Gravitational-Wave Observatory \citep[DECIGO\footnote{\url{http://tamago.mtk.nao.ac.jp/spacetime/decigo_e.html}},][]{seto01}, the Einstein Telescope \citep[ET\footnote{\url{http://www.et-gw.eu/}},][]{punturo10}, and LIGO. 
 
 
 \begin{figure}
@@ -440,7 +505,7 @@ with $f_{1,2}$ the initial and final frequency of the GW signal, $h_c(f,z)$ its 
 \label{fig:fhor}
 \end{figure}
 
-From the plot is evident that ground based telescopes provide a relatively limited view on the IMBH realm, although LIGO can provide insights on low-mass IMRIs ($<500\Ms$) up to redshift $z_{\rm hor} = $ and ET will enable the observation of IMRIs with mass $<10^3\Ms$ up to $z_{\rm hor} = 1-10$, the same range of redshift accessible with LISA to listen GWs from heavy IMRIs ($M_{\imri}>10^4\Ms$). Decihertz observatories like DECIGO [ADD CIT TO DECIGO AND DOs], instead, will allow the detection of IMRIs in the whole $50-10^6\Ms$ mass range up to the dawn of the Universe, thus constituting ideal detectors to unveil the truly nature of IMBHs. 
+From the plot is evident that ground based telescopes provide a relatively limited view on the IMBH realm, although LIGO can provide insights on low-mass IMRIs ($<500\Ms$) up to redshift $z_{\rm hor} = $ and ET will enable the observation of IMRIs with mass $<10^3\Ms$ up to $z_{\rm hor} = 1-10$, the same range of redshift accessible with LISA to listen GWs from heavy IMRIs ($M_{\imri}>10^4\Ms$). Decihertz observatories like DECIGO \citep{KawamuraEtAl2011} and similarly designed mission \citep{arca19}, instead, will allow the detection of IMRIs in the whole $50-10^6\Ms$ mass range up to the dawn of the Universe, thus constituting ideal detectors to unveil the truly nature of IMBHs. 
 
 Once that the dependence between the horizon redshift and the IMBH mass is determined, we can infer the IMRIs rate by calculating the total number of IMRIs inside the cosmological volume encompassed by $z_{\rm hor}$, a requirement that can be expressed as:
 \begin{align}
@@ -448,20 +513,17 @@ Once that the dependence between the horizon redshift and the IMBH mass is deter
 & \times \frac{\derd V_c}{\derd z}  \derd z \derd M_\ibh,
 \end{align}
 being $\derd V_c/\derd z$ the comoving cosmological volume element, $\xi(M_\ibh)$ the IMBH mass function, and $\derd n_{\imri}/\derd M_\ibh$ the number of IMRIs per unit of IMBH mass. We can write the latter quantity as
-\begin{equation}
-\frac{\derd n_{\imri}}{\derd M_\ibh} = \frac{\derd n}{\derd M_g\derd z}\frac{\derd n_\gc}{\derd M_\gc}\frac{\derd M_\gc}{\derd M_\ibh}f_{\imri}(M_\ibh) p_\ibh e_{\imri}.
-\end{equation}
+\begin{align}
+\frac{\derd n_{\imri}}{\derd M_\ibh} =& f_{\imri}(M_\ibh) p_\ibh e_{\imri}\times \nonumber \\
+& \times \frac{\derd n}{\derd M_g\derd z}\frac{\derd n_\gc}{\derd M_\gc}\frac{\derd M_\gc}{\derd M_\ibh}.
+\end{align}
 Here, $\derd n/(\derd M_g \derd z)$ represents the number of galaxies per unit of redshift and galaxy mass, $\derd n/\derd M_\gc$ is the number of clusters per cluster mass in a given galaxy, $\derd M_\gc/\derd M_\ibh$ connects GCs and IMBHs, $e_\imri$ is the number of times that the same IMBH can form an IMRI with a stellar companion, $f_{\imri}(M_\ibh)$ is the fraction of IMRIs that undergo merger within a Hubble time (a quantity that is extracted from our simulations), and $p_\ibh$ represents the probability for a cluster to host an IMBH. In the following, we assume $p_\ibh = 0.2$ \citep{giersz15}.
 
 The term $\derd M_\gc / \derd M_\ibh$ can be calculated by inverting Equation \ref{mcmibh} and performing the derative. For the number distribution of the GCs mass in a given galaxy, $\derd n/\derd M_\gc$, we assume a power-law
 \begin{equation}
 \frac{\derd n}{\derd M_\gc} = k M_\gc^{-s},
 \end{equation}
-with the slope $s = 2.2$ and the normalization constant given by:
-\begin{equation*}
-k = \frac{M_{\rm GCS}(2-s)}{(M_{\gc 2}^{2-s} - M_{\gc 1}^{2-s})},
-\end{equation*}
-with $M_{\rm GCS} = 5\times 10^{-4} M_g$ the mass of the GC system \citep{webb15}, which is given as a fraction of the total galaxy mass ($M_g$), and $M_{\gc 1,2}$ the minimum and maximum value allowed for the GCs mass. In our calculations, we assume an average galaxy mass of $6\times 10^{10}\Ms$, and $M_{\gc 1,2} = (5\times 10^3 - 8\times 10^6) \Ms$, corresponding to an IMBH mass range $M_\ibh \simeq (30 - 4.6\times 10^4)\Ms$ according to Equation \ref{mcmibh}, which can also be used to write $M_\gc^{-s} = aM_\ibh^{-bs}$, with $a,b$ obtained by manipulating conveniently Equation \ref{mcmibh}.
+with the slope $s = 2.2$ and the normalization constant given in Equation \ref{normal}. Following the previous calculations, we assume an average galaxy mass of $6\times 10^{10}\Ms$, and $M_{\gc 1,2} = (5\times 10^3 - 8\times 10^6) \Ms$, corresponding to an IMBH mass range $M_\ibh \simeq (30 - 4.6\times 10^4)\Ms$ according to Equation \ref{mcmibh}, which can also be used to write $M_\gc^{-s} = aM_\ibh^{-bs}$, with $a,b$ obtained manipulating conveniently the relation.
 The $\derd n/(\derd M_g\derd z)$ is obtained exploiting the results in \cite{conselice16}, who studied the distribution of galaxies with stellar masses up to $10^{12}\Ms$ up to redshift $z=8$. In particular, we exploit the following parametric expression of galaxies number density 
 \begin{equation}
 \phi(z) = -\frac{\phi_* 10^{(\alpha_* + 1)(M_2-M_*)}}{\alpha_* + 1},
@@ -470,7 +532,8 @@ with $\phi_*,~\alpha_*,~M_*$ depending on the redshift \citep[see Table 1 in][]{
 
 Substituting all the terms and manipulating them conveniently, the total number of IMRI in the portion of Universe accessible to a given detector is thus given by
 \begin{align}
-N_{\imri,1} = & k a^{1-s} b p_\ibh e_\imri \int_{M_{1}}^{M_{2}} \int_0^{z_{hor(M_\ibh)}} M_\ibh^{(1-s)b-1}  \times \nonumber \\
+N_{\imri,1} = & k a^{1-s} b p_\ibh e_\imri \times \nonumber \\
+& \times \int_{M_{1}}^{M_{2}} \int_0^{z_{hor(M_\ibh)}} M_\ibh^{(1-s)b-1}  \times \nonumber \\
 & \times  f_{\imri}(M_\ibh) \phi(z) \frac{\derd V_c}{\derd z} \derd z \derd M_\ibh.
 \end{align}
 
@@ -501,10 +564,9 @@ N_{\imri, 2} = & k a^{1-s} b p_\ibh e_\imri \int_{M_{1}}^{M_{2}} \int_0^{z_{hor(
 An estimate of the merger rate can therefore be calculated as $\Gamma_\imri = N_\imri / T$. 
 Table \ref{tab:5} summarizes the merger rates calculated for different instruments, and assuming different parameters.
 
-Our results suggest that LIGO can already be capable of observing up to $\sim 2-5$ mergers over a 4 yr observation involving IMRIs with a total mass $M_\imri = 40-230\Ms$ and mass ratio $M_\bh / M_\ibh = 0.05 - 1$ out to redshift $z = 0.15-0.21$. Over the same observation time, LISA would enable us to observe $\sim 1.5-23$ mergers with larger masses $M_\imri < 5\times 10^4\Ms$ and lower mass ratios, down to $q = 2\times 10^{-4}$, out to redshift $z \simeq 0.7-1.8$.
+Our results suggest that LIGO can already be capable of observing up to $\sim 1.25-4.33$ mergers over a 4 yr observation involving IMRIs with a total mass $M_\imri = 40-230\Ms$ and mass ratio $M_\bh / M_\ibh = 0.05 - 1$ out to redshift $z = 0.15-0.57$. Over the same observation time, LISA would enable us to observe $\sim 1.9-30$ mergers with larger masses $M_\imri < 5\times 10^4\Ms$ and lower mass ratios, down to $q = 2\times 10^{-4}$, out to redshift $z \simeq 0.7-1.8$.
 
-While the constraints on "present-day" technologies is already quite encouraging, the next generation of both ground- and spaced-observatories could provide quite a large amount of observation up to the maximum redshift allowed ($z=2-6$). Assuming a 4 yr observation mission, ET could detected up to 200-4400 IMRIs per yr with masses $M_\imri < 2000 \Ms$. The space-based DECIGO could provide a similar amount of observations per yr, but enabling the observation of IMRIs with total mass up to $\sim 5\times 10^4\Ms$.
-
+While the constraints on "present-day" technologies is already quite encouraging, the next generation of both ground- and spaced-observatories could provide quite a large amount of observation up to the maximum redshift allowed ($z=2-6$). Assuming a 4 yr observation mission, ET could detected up to $120-2600$ IMRIs per yr with masses $M_\imri < 2000 \Ms$. The space-based DECIGO could provide an even larger amount of observations per yr ($\sim 250-4400$ in 4 yr of observation), enabling the observation of IMRIs with total mass up to $\sim 5\times 10^4\Ms$ up to the epoch of GC formation and even up to the reionization epoch.
 
 
 \begin{table*}
@@ -515,22 +577,22 @@ While the constraints on "present-day" technologies is already quite encouraging
 Instrument & $M_{\rm SBH}$ & $z_{\rm max}$ & $M_{\ibh ,1}$ & $M_{\ibh ,2}$ & $T$ & $\Gamma_1$ & $\Gamma_2$ \\
    & $\Ms$ & &$\Ms$ & $\Ms$ & Gyr & yr$^{-1}$ & yr$^{-1}$ \\ 
 \hline
-LIGO & $10$ & $0.38$ & $29$ & $200$ & $8$ & $2.23$ &$2.60$ \\
-LIGO & $10$ & $0.38$ & $29$ & $200$ & $8$ & $2.23$ &$2.60$ \\
-LIGO & $30$ & $0.57$ & $29$ & $200$ & $8$ & $5.33$ &$7.72$ \\
-LIGO & $30$ & $0.57$ & $29$ & $200$ & $8$ & $5.33$ &$7.72$ \\
-LISA & $10$ & $0.70$ & $29$ & $46240$ & $8$ & $1.47$ &$2.13$ \\
-LISA & $10$ & $0.70$ & $29$ & $46240$ & $8$ & $1.47$ &$2.13$ \\
-LISA & $30$ & $1.78$ & $29$ & $46240$ & $8$ & $22.82$ &$18.10$ \\
-LISA & $30$ & $1.78$ & $29$ & $46240$ & $8$ & $22.82$ &$18.10$ \\
-ET & $10$ & $2.00$ & $29$ & $2000$ & $8$ & $359.74$ &$205.09$ \\
-ET & $10$ & $6.00$ & $29$ & $2000$ & $8$ & $3775.89$ &$682.48$ \\
-ET & $30$ & $2.00$ & $29$ & $2000$ & $8$ & $383.20$ &$216.55$ \\
-ET & $30$ & $6.00$ & $29$ & $2000$ & $8$ & $4411.82$ &$768.38$ \\
-DECIGO & $10$ & $2.00$ & $29$ & $46240$ & $8$ & $424.02$ &$294.74$ \\
-DECIGO & $10$ & $6.00$ & $29$ & $46240$ & $8$ & $5020.73$ &$1183.64$ \\
-DECIGO & $30$ & $2.00$ & $29$ & $46240$ & $8$ & $424.02$ &$294.74$ \\
-DECIGO & $30$ & $6.00$ & $29$ & $46240$ & $8$ & $5020.73$ &$1183.64$ \\
+LIGO & $10$ & $0.38$ & $29$ & $200$ & $8$ & $1.25$ &$1.46$ \\
+LIGO & $10$ & $0.38$ & $29$ & $200$ & $8$ & $1.25$ &$1.46$ \\
+LIGO & $30$ & $0.57$ & $29$ & $200$ & $8$ & $3.00$ &$4.33$ \\
+LIGO & $30$ & $0.57$ & $29$ & $200$ & $8$ & $3.00$ &$4.33$ \\
+LISA & $10$ & $0.70$ & $29$ & $46240$ & $8$ & $1.90$ &$2.75$ \\
+LISA & $10$ & $0.70$ & $29$ & $46240$ & $8$ & $1.90$ &$2.75$ \\
+LISA & $30$ & $1.78$ & $29$ & $46240$ & $8$ & $29.34$ &$23.31$ \\
+LISA & $30$ & $1.78$ & $29$ & $46240$ & $8$ & $29.34$ &$23.31$ \\
+ET & $10$ & $2.00$ & $29$ & $2000$ & $8$ & $214.69$ &$123.87$ \\
+ET & $10$ & $6.00$ & $29$ & $2000$ & $8$ & $2155.25$ &$396.60$ \\
+ET & $30$ & $2.00$ & $29$ & $2000$ & $8$ & $238.18$ &$136.55$ \\
+ET & $30$ & $6.00$ & $29$ & $2000$ & $8$ & $2571.14$ &$458.30$ \\
+DECIGO & $10$ & $2.00$ & $29$ & $46240$ & $8$ & $357.06$ &$248.20$ \\
+DECIGO & $10$ & $6.00$ & $29$ & $46240$ & $8$ & $4227.86$ &$996.72$ \\
+DECIGO & $30$ & $2.00$ & $29$ & $46240$ & $8$ & $357.06$ &$248.20$ \\
+DECIGO & $30$ & $6.00$ & $29$ & $46240$ & $8$ & $4227.86$ &$996.72$ \\
 \hline
 \label{tab:5}
 \end{tabular}
@@ -539,23 +601,6 @@ DECIGO & $30$ & $6.00$ & $29$ & $46240$ & $8$ & $5020.73$ &$1183.64$ \\
 
 
 
-\subsection{Serendipitous formation of stellar BH binaries around an IMBH}
-
-Among all the runs performed, we find two interesting cases, namely s151 and s400, in which the stellar mass BHs are initially sufficiently close to form a tight binary. In both cases, the IMBH mass is relatively small $M_{\ibh} = 100\Ms$, and the inner binary is comprised of the other two, stellar-mass, BHs. It is not surprising that a BH-BH pair forms in a model with low-mass IMBH, due to the lower velocity dispersion and the larger tidal radius needed for the binary to form without being ripped apart from the IMBH. In both cases, the BH-BH binary undergoes Kozai-Lidov oscillations, which periodically induce an increase in the binary eccentricity and the mutual inclination.
-
-In model s400, the amplitude of the oscillation is minimal, the mutual inclination ranges between $i = 126-130^\circ$, while the eccentricity varies in the range $e = 0.882-0.904$. Although the KL effect is not very efficient in affecting the BH-BH evolution, the binary is sufficiently tight to have a short merger timescale, being $t_{\rm gw} \simeq 3\times 10^7$ yr.
-
-In model s151, instead, the Kozai-Lidov effect is more effective, leading the inclination to vary strongly in the range $\sim 40-90^\circ$ and the eccentricity to rise up to $e = 0.99$. The time evolution of both $e$ and $i$ is shown in Figure \ref{F9}, together with the associated merger time-scale. 
-In this particular simulation, the reduction of the merger time related to the episodic GW emission as described in Equation \ref{kozai}, trigger the BH binary coalesce in a time $5600$ times smaller than the time needed for the same binary to merge in isolation.
-
-In both the cases that we find, the IMBH mass is $M_\ibh=100\Ms$. Heavier IMBHs would make BH-BH pairing much harder, because of the higher velocity dispersion and the larger gravitational influence. Having 250 simulations with $M_\ibh=100\Ms$ in each set, we can infer BH-BH formation probability as $P_{\rm bhb} = 0.8\%$.
-
-\begin{figure}
-\centering 
-\includegraphics[width=\columnwidth]{kozai_151}
-\caption{Top panel: time evolution of the merger timescale for model number 151, in which two BHs pair together while the IMBH acts as a perturber. Central panel: mutual inclination as a function of time for the BH-BH pair in simulation number 151. Bottom panel: ecentricity as a function of time for the BH-BH pair in simulation number 151.}
-\label{F9}
-\end{figure}
 
 \section{Gravitational waves}
 
@@ -577,27 +622,27 @@ being $M_{\rm bin}$ the merging binary total mass. Using this definition, we sho
 \end{figure}
 
 We find that more than $95\%$ of the sources in both models transit into the $5\times 10^{-4} - 5\times 10^{-3}$ Hz band, where LISA is sensitive. Approximately $10\%$ instead are characterized by GW emission in DHz regime, being potentially observed with LIGO and, in the future, with DECIGO and ET.
-The numbers of sources appearing in different bands are summarized in Table \ref{tab:t4}
+The numbers of sources appearing in different bands are summarized in Table \ref{tab:t4}.
+From Table \ref{tab:t4} appears evident that the number of IMRIs entering the $> 10$ Hz band is larger than in the other two sets. This is due to the fact that, for IMBH masses $M_\ibh < 10^4\Ms$ the number of mergers in SET2 is up to two times larger, thus causing a larger number of high-frequency GW emitters.   
+It is interesting to note that a handful of sources could have a non-negligible eccentricity both in the LISA and DECIGO observational band, while at larger frequencies the binaries are already completely circular. In order to better highlight the probability for low-frequency detectors to observe eccentric IMRIs, we show in Figure \ref{F11} the eccentricity distribution of sources entering the mHz and Hz frequency bands. We find that the amount of sources maintaining an eccentricity above 0.1 while transiting either the low- or high-frequency bands of GW detectors is limited to $1-5\%$, regardless of the models set.  
  
  \begin{table*}
      \centering
-     \caption{IMRI frequency bands}
+     \caption{Number of IMRI in different frequency bands}
      \begin{tabular}{ccccccc}
         \hline
         \hline
-        model & IMRI - total number & $N_{\rm mHz}$ & $N_{\rm cHz}$ & $N_{\rm dHz}$ & $N_{\rm Hz}$ & $N_{\rm DHz}$ \\ 
-              &                     &$0.5-5$ mHz    & $ 0.5-5$ cHz  &  $0.5-5$ dHz & $0.5-10$ Hz & $>10$ Hz \\
+        model & IMRI & $N_{\rm mHz}$ & $N_{\rm cHz}$ & $N_{\rm dHz}$ & $N_{\rm Hz}$ & $N_{\rm DHz}$ \\ 
+              &    total number  &$0.5-5$ mHz    & $ 0.5-5$ cHz  &  $0.5-5$ dHz & $0.5-10$ Hz & $>10$ Hz \\
         \hline
-        SET0 & 316 & 306 & 311 & 180 & 69 & 18 \\
-        SET1 & 267 & 256 & 259 & 144 & 56 & 22 \\
-        SET2 & 237 & 226 & 235 & 147 & 95 & 36 \\
+		SET0& 259 & 255 & 257 & 158 & 60  & 14 \\
+		SET1& 312 & 306 & 309 & 184 & 62  & 15 \\
+		SET2& 307 & 306 & 307 & 212 & 129 & 40 \\
         \hline
      \end{tabular}
      \label{tab:t4}
  \end{table*}
  
- 
-It is interesting to note that a handful of sources could have a non-negligible eccentricity both in the LISA and DECIGO observational band, while at larger frequencies the binaries are already completely circular. In order to better highlight the probability for low-frequency detectors to observe eccentric IMRIs, we show in Figure \ref{F11} the eccentricity distribution of sources entering the mHz and Hz frequency bands. We find that the amount of sources maintaining an eccentricity above 0.1 while transiting either the low- or high-frequency bands of GW detectors is limited to $1-5\%$, regardless of the models set.  
  
 \begin{figure}
 \centering
@@ -619,8 +664,21 @@ For the sake of visibility, we only show the strain associated to the dominant f
 
 \section{Conclusions}
 
+In this paper we presented the results of a suite of 6000 direct N-body simulations modelling the evolution of an IMBH-BH binary orbited by a third BH, taking into account post-Newtonian corrections up to order 2.5 and the gravitational field of the host cluster (treated as an external potential). The simulations are gathered into three sets: set 0 and 1 differ in the scaling relation adopted to connect the masses of the IMBH and its host cluster, whereas set 2 is similar to set 0 but we assumed a range of wider orbits for the outer BH. In all models, we vary the IMBH mass between $10^2-10^6\Ms$ with the aim to unveil the dependence between this quantity and the probability for IMRIs to form.
+Our results can be summarized as follows:
 \begin{itemize}
-\item {\bf Make your point!}
+\item at formation, IMRIs formed via the IMBH-BH-BH interactions exhibit an eccentricity distribution much steeper than the initially adopted one, i.e. $N(e) \propto e^5$. The distribution of semimajor axis, instead, shows a sharp decline at values above $\sim 50$ AU and a clear cut-off at $\sim 100$ AU (Figure 3, put ref: \ref{});
+\item the average eccentricity of IMRIs at formation seems to decrease with the IMBH mass, suggesting that the formation of highly eccentric IMRIs through the channel described here is favoured for IMBH masses below $10^5\Ms$ (Figure 4, put ref: \ref{});
+\item merger times for this class of sources shows a steep rise toward $\sim 1-10$ Gyr, with a broad 
+distribution down to $\sim 1$ yr. In all the models investigated, more than $50\%$ of IMRIs have a merger time below $0.1-1$ Gyr (Figure 5, put ref: \ref{});
+\item from our simulations, we infer an IMRI formation probability of $12-15\%$, regardless of the assumptions made. This quantity increases at increasing the IMBH mass and, correspondingly, heavier GCs, following a powerlaw for IMBH masses above $10^3\Ms$ (Figure 6 - 7, put refs: \ref{});
+\item in a few particular cases, we find that the two stellar BHs have orbits sufficiently similar to favour the formation of a bound pair that orbit the IMBH. The IMBH field exert on the stellar BH binary Kozai-Lidov oscillations that trigger the binary merger in $\sim 10^7$ yr, a timescale $\sim 5600$ times smaller than the merger time for the same binary in isolation (Figure 8, put ref: \ref{}). We find that the probability for these events to occur is $\sim 0.8\%$; 
+\item upon simplistic assumptions, we derive an IMRI occurrence rate of $\sim 2.26\times 10^5$ yr$^{-1}$ in the MW and similar galaxies, which corresponds to $\sim 10$ yr$^{-1}$ events in the volume encompassed by a luminosity distance of $D_L = 470$ Mpc (i.e. redshift $z\leq 0.1$) (Equation 16, put ref: \ref{});
+\item assuming a 4 yr observation time and a signal-to-noise ratio of 15, we calculate the horizon redshift of IMRIs for four GW detectors: LIGO, LISA, ET, DECIGO. We find that LIGO can observe IMRI with mass ratios above $0.05$ and total mass $<250\Ms$ out to redshift $z<0.6$. LISA will permit the observations of heavier IMRIs (total mass up to $10^5-10^6\Ms$) out to redshift $z=10$, but the horizon redshift will be much smaller ($z < 1$) for IMBHs with a mass $M_\ibh<10^4\Ms$. The next generation of GW telescopes has the potential to chase IMBHs and IMRIs formation much farther in time and space. ET can provide observations of IMRIs in the IMBH mass range $10^2-10^3\Ms$ out to redshift 10, whereas DECIGO can potentially probe IMRIs formation up to redshift $z > 100-1000$, well beyond the time at which the first stars formed. The possible construction of GW detectors sensitive in the dHz frequency band thus appear to be a very promising way to chase these systems up to the dawn of the Universe (Figure 9, put ref: \ref{});
+\item combining our simulations, the calculated horizon redshift, and taking advantage of observational limits on the cosmological distribution of galaxies, we derive an IMRI merger rate for the four detectors discussed in the previous point and assuming a 4 yr observation time. We find that LIGO should be capable of observing up to 1-5 IMRIs per year with masses below $230\Ms$, whereas LISA could deliver up to 30 observations per yr for IMRIs with masses up to $5\times 10^4\Ms$. The next generation of detectors will definitely lead to an improvement of these numbers, being the inferred rate for ET in the range of $250-2000$ yr$^{-1}$ for IMRIs with masses below $10^3\Ms$ and for DECIGO up to $4400$ yr$^{-1}$ for IMRIs covering the whole mass range $10^2-10^5\Ms$ (Table 4, put ref: \ref{});
+\item for all IMRIs in our sample, we follow the evolution of the orbital parameters down to the merger. Despite IMRIs tend to have a high eccentricity at formation, circularization due to GW emission has already took place by the time in which the source enter in the frequency range accessible by GW detectors. We find that only $\sim 1\%$ of IMRIs have a residual eccentricity above $e = 0.1$ when entering the mHz regime (Figure 11, put ref: \ref{});
+\item we derive the GW strain for all IMRIs in our sample, showing that these sources has the potential to be interesting multiband sources. Once decihertz observatories will fly and third generation detectors will be operative, we could be able to observe the whole evolution of IMRIs with masses in the range $10^2-10^4\Ms$ with at least two instruments, covering both the spiralling and merger phase (Figure 12, put ref: \ref{});  
+  
 \end{itemize}
 
 \section*{Acknowledgements}
