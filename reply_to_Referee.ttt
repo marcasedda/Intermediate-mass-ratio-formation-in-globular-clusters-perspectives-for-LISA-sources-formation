@@ -1,0 +1,181 @@
+Dear Editor,
+
+we apologize for the delay in providing the improved version of the manuscript. We want to
+thank the referee for the comments and suggestions provided, that motivated us to revise the approach
+followed and restyle the manuscript significantly.
+To meet the referee's requests, we created a whole new sample of simulations, focusing on the effects
+that different assumptions can have on the results. The current database of models is comprised of
+28,000 simulations gathered into 7 different set of initial condition assumptions and 4 values for the IMBH mass.
+All the new text added/modified in the draft are highlighted
+with boldface text. In the following, we detail our response to the referee's concern, using #Q to identify the
+referee's query and #A to mark our reply for the sake of clarity.
+
+Introduction
+Q1. In the introduction, the authors are missing a number of reference, which are essential to put the
+paper in a wider context. First, they do not mention other formation channels for IMBHs (see Greene+
+2019, that they cite). I know the main focus is on globulars, but they also claim to handle dwarf galaxies,
+where the IMBH formation channels can be different from clusters.
+A1. We enlarged the discussion about IMBH formation channels to provide a wider point of view on the current state-of-the-art.
+
+Q2. In the introduction, they say the IMBH has “little dynamical effects”. Can they explain what they
+mean?
+A2. We rephrased the sentence into: "a striking observational evidence for the presence of IMBHs inhabiting GCs is still missing due to the {\bf impossibility to resolve the region in which they dominate dynamics" to clarify our standpoint.
+
+Q3. They are missing references to old and new papers investigating IMBH, IMRIs, and their detectability.
+I strongly recommend to cite the following papers at least:
+- Will 2004 https://ui.adsabs.harvard.edu/abs/2004ApJ...611.1080W/abstract -
+- Mandel+ 2008 https://ui.adsabs.harvard.edu/abs/2008ApJ...681.1431M/abstract -
+Fragione+ 2018a,b
+-https://ui.adsabs.harvard.edu/abs/2018ApJ...856...92F/abstract
+-https://ui.adsabs.harvard.edu/abs/2018ApJ...867..119F/abstract -
+- Gair+ 2011 https://ui.adsabs.harvard.edu/abs/2011GReGr..43..485G/abstract -
+- Abbott+ 2017 https://ui.adsabs.harvard.edu/abs/2017PhRvD..96b2001A/abstract -
+- Baumgardt 2017 https://ui.adsabs.harvard.edu/abs/2017MNRAS.464.2174B/abstract -
+- Holley-Bockelmann+ 2008 https://ui.adsabs.harvard.edu/abs/2008ApJ...686..829H/abstract
+A3. We apologize for overlooking these papers, we updated our reference list accordingly
+
+Q4. In the introduction and in the following of the paper, the authors never discuss the effect of recoil
+kicks after the IMBH merges with a BH. I think these kicks might be important and could lower the IMRI
+rates.
+A4. We thank the referee for raising this important point. We dedicated a whole section about the IMBH
+recoil in the updated manuscript.
+
+Q5. I am missing in the introduction a part where the authors describe what is new in their analysis. They
+should discuss if and how their methodology is different with respect to previous literature.
+A5. We addressed the referee's comment by explaining that our approach differs from others since our models
+do not rely on an initial preferential configuration for the IMBH-BH-BH system and, compared to
+previous works, we explore the role of the stellar BH mass spectrum, the stellar progenitor metallicity, and
+the star cluster internal structure in determining the formation of an IMRI.
+
+Q6. Figure 1 needs a caption describing all the symbols shown in the figure itself.
+A6. Done
+
+Initial conditions
+Q1. The authors limit themselves to consider only 2 BHs. However, the reality is that may more BHs are
+in the center of clusters. How this affects the results?
+A1. Actually, this point depends mostly on the type of formation mechanisms assumed. In fact, the growth
+of an IMBH is expected to take place either in the earliest phase of the cluster evolution (e.g. Portegies-Zwart and McMillan 2002)
+via stellar collisions of prospective BH progenitors, or in a late phase of the cluster evolution (e.g. Giersz et al. 2015)
+after the population of stellar BHs has been consistently depleted by dynamical encounters.
+Unfortunately, these aspect has been poorly explored in the literature, with a few notable exceptions. In fact,
+a significant amount of previous works did not account for the interplay between the IMBH growth process and the corresponding
+response of the cluster stellar mass function, in fact the underlying assumption in many models is that the IMBH is placed
+ab initio in the cluster centre alongside a "standard" mass function. We decided to follow the predictions of models that
+account for both IMBH growth and stellar dynamics simultaneously, which suggest that the number of stellar BHs that might
+orbit a fully grown IMBH is limited to a handful (see also Arca Sedda, Askar, and Giersz 2019)
+
+Q2. Why the authors use a Dehnen model instead of a classical King profile for clusters? I guess this
+affects their conclusions.
+A2. We thank the referee for raising this concern. We in fact decided to explore more the role of the cluster density
+distribution, by exploring how our results change if we assume for the cluster a Plummer profile, a Dehnen profile with slope 0.5,
+or a steep Dehnen profile with slope 1.0. We note that the choice of a cusped density profile seems more appropriate for
+clusters containing an IMBH, since it is expected that in the IMBH closest vicinity the density distribution tends to develop
+a cusp, similarly to what is expected for supermassive BHs in galactic nuclei. To explore the possible effect of a centrally cored
+distribution we decided to use a Plummer profile, which has the advantage of having an ergodic distribution function of the energy,
+thus allowing a self-consistent potential-density pair.
+
+Q3. Moreover, the IMBH can (and most certainly do) develop a cusp of stars and compact objects, which
+is very different from the potential they account for. I recommend the authors to run at least one
+additional model considering a cusp of stars and BHs instead of a Dehnen profile.
+A3. This is accounted for in our models in the form of a static external profile.
+
+
+Q4. I think that their choice of the BH-mass function is quite arbitrary. First BHs can be ejected as a result
+of natal kicks, which are usually assumed to scale ~1/mbh. Dynamics then tend to process first massive
+BHs. They say that the probability for a BH to be ejected is ~mbh^0.5. Has this any support by
+numerical simulations? How the results are affected? I would recommend to run additional models with
+a different mass spectrum.
+A4. To explore this point, we decided to adopt three different BH mass spectrum: one based on the mass spectrum derived
+from stellar evolution of single stars, one in the form of a power-law, one in the form of a flat distribution.
+These three choices allow us to explore how the effects of dynamics (e.g. a modification of the "stellar-evolution driven"
+BH mass spectrum operated by dynamics) reflect on IMRIs' properties. We also varied the host cluster metallicity,
+which implies varying the BH mass spectrum derived from single stellar evolution.
+
+
+Q5. The choice of the inner and outer semi-major axis is also arbitrary. Why those cuts at low and high
+separations? Is the maximum of those consistent with the soft-hard boundary? If the systems they
+consider are too wide, other stars and BHs can disrupt the system.
+A5. Following the referee comment, we decided to explore also the role of initial orbital properties. As detailed in the text,
+in our improved procedure we draw the stellar BH initial positions and velocities according to the underlying density distribution adopted for the host cluster.
+This allows us to construct a reliable set of orbital parameters that are derived directly from the host cluster structure.
+To further explore this aspect, we also ran a model in which the initial semimajor axes are drawn from a logarithmically flat distribution, to check
+whether this affects the IMRI formation occurrence.
+
+Q6. Again, why the cluster scale radius is assumed in the range 0.2-1? Is this consistent with
+observations of clusters in our galaxy? What about the dwarf galaxies? What are the systems that give
+the largest number of mergers?
+A6. We have revised our discussion on the host cluster properties, clarifying that our cluster models have a
+half-mass radius of 3.4 pc, i.e. compatible with the average value measured with Milky Way globulars.
+
+Q7. Unfortunately, I think that all the results (at least the N-body part) are biased by the above somewhat
+arbitrary assumptions (if not proved they are reasonable). Another big limitation comes from the fact
+that the authors only have 250 simulations per model. I know that these runs are expensive, but the
+statistics looks too poor to me. I strongly recommend the authors to run more runs for each model, or to
+decrease the number of models, but adding more simulations.
+A7. We improved the statistical significance of our models by reducing the IMBH mass values explored to four (Log M = 2,3,4,5)
+and by running for each value 1,000 simulations. To explore the role of other effects, as explained above, we
+created 7 different sets, each consisting of 4,000 simulations. 
+
+Q8. Finally, it is arbitrary also their termination criterion. A natural limit is posed by the evaporation
+timescale of these systems, which in turn depends on the cluster properties. I strongly recommend to
+account for that and run models up to that timescale.
+A8. We clarified this aspect in the improved manuscript
+
+
+Results
+Q1. In Eq.9, the criterion used is rather relative to the strength of the octupole term. Please, discuss this
+properly.
+A1. In the improved manuscript we removed Equation 9
+
+Q2. Eq. 10: this is true only in some cases and (probably) when the quadrupole approximation is valid. I
+suggest to discuss in a more detail the application of that equation.
+A2. In the improved manuscript we removed Equation 10
+
+Q3. The authors say in Sec. 3.2 that the cluster potential has a little effect. This is due to probably the fact
+that the integration time is too small. For example, if they integrate up to the evaporation timescale, the
+cluster would dissolve the system.
+A3. As detailed in the new version of the paper, the timescale associated with IMRIs formation is sufficiently short
+to make negligible any evolution of the underlying cluster distribution.
+
+Q4. There are many figures in the paper, but no figure on the BH mass spectrum. What is the typical
+mass of the stellar BH merging with an IMBH?
+A4. We added this information in the new Figs. 5 and 6
+
+Q5. Again, the branching ratios derived as a function of the IMBH mass are biased by the arbitrarily of the
+initial assumptions of the authors and the total integration time.
+A5. We revised our discussion related to this aspect.
+
+
+Gravitational Waves
+
+
+Q1. Why the authors consider circular IMRIs, when they say that many can be eccentric?
+A1. We clarified that on average, the majority of sources are already circular when entering the frequency
+bands considered (see new Figure 12)
+
+Q2. For Eq.2, what are the numbers and functions used for each detector? The same applies to Eq. 18.
+A2. We highlighted the website from wich we extracted the functions for each detector in the footnotes at page 10
+
+Q3. Eq. 16: what is the value of “s”? Reference?
+A3. We added the value (s = 2.2) and reference (Gieles, 2009)
+
+Q4. Eq. 20: the symbol “e_IMRI” can be confused with the eccentricity. Please, change.
+A4. We corrected all equations to avoid possible confusions.
+
+Q5. The lower end of their inferred IMBH detectable mass is actually a stellar BH mass! LIGO has
+observed this! How does this relate to their findings and estimates?
+A5. We used our models to predict the merger rate of IMBHs in the LIGO range, suggesting that LIGO
+should be able to observe 0.8-2.5 events over four years of observations. Considering that three observational
+runs by LIGO-Virgo covered a total of 2 years of observations, we expect that the full catalogue of sources
+observed by the collaboration (not fully disclosed yet) should contain at least an IMRI with primary mass
+< 200 Msun.
+
+Q6. In Eq. 24, the authors assume t_IMBHf=2 Gyr. Again, this looks to me quite arbitrary. How the results
+change with different values? Please motivate the choices!
+A6. The 2 Gyr timescale adopted here is inferred by weighting the occurrence of IMBH formation via fast
+or slow scenarios as described in Giersz et al. (2015). We added some text to clarify this choice.
+
+Conclusions
+
+Q1. A bit too long, I would make it shorter and focus on the main points
+A1. We reshaped and reduced the text to convey better the main points of the paper
